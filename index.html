@@ -9,7 +9,7 @@
 :root{--navy:#07365a;--navy2:#0b5272;--teal:#0b918a;--teal-soft:#e4f6f3;--blue-soft:#e9f3fa;--bg:#f2f6f8;--white:#fff;--ink:#122f44;--sub:#5e7486;--line:#d7e3ea;--danger:#9a2e38;--dsoft:#fff0f0;--warn:#8b5906;--wsoft:#fff6e1;--ok:#13714a;--oksoft:#e6f5ec;--shadow:0 9px 30px rgba(11,52,78,.065);font-family:Tahoma,'Segoe UI',Arial,sans-serif}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);line-height:1.65}button,input,textarea,select{font:inherit}button{cursor:pointer}button:disabled{opacity:.43;cursor:default}a{color:var(--navy)}
 .header{background:linear-gradient(118deg,#083b61 0%,#0a5475 65%,#0b8b87 100%);color:white;padding:25px max(18px,calc((100vw - 1500px)/2));position:relative;overflow:hidden}.header:after{content:'';position:absolute;left:-70px;top:-120px;border:60px solid rgba(255,255,255,.05);border-radius:100%;width:260px;height:260px;pointer-events:none}.header-inner{max-width:1500px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:24px;position:relative;z-index:1}.eyebrow{font-size:12px;letter-spacing:.2px;opacity:.85;font-weight:700}.header h1{font-size:clamp(20px,2.6vw,32px);margin:6px 0 5px;line-height:1.4}.header p{margin:0;color:#e5f5fb;font-size:13px}.brandmark{display:flex;align-items:center;justify-content:center;min-width:84px;height:70px;border:1px solid rgba(255,255,255,.35);border-radius:18px;background:rgba(255,255,255,.1);font-size:12px;font-weight:700;text-align:center;padding:7px}
-.wrapper{max-width:1500px;margin:0 auto;padding:18px 18px 35px}.toolbar,.surface,.sidebar,.slide{background:var(--white);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}.toolbar{padding:17px 20px;margin-bottom:15px}.toolbar-top{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap;margin-bottom:14px}.toolbar h2{font-size:16px;margin:0}.tag{font-size:11px;font-weight:700;color:var(--navy2);background:var(--blue-soft);padding:5px 10px;border-radius:40px}.meta{display:grid;grid-template-columns:1.4fr 1fr 180px;gap:11px}.field label{display:block;font-size:12px;font-weight:700;color:var(--sub);margin-bottom:5px}.field input,.field select,.field textarea{width:100%;border:1px solid #c8d9e3;border-radius:10px;padding:10px 11px;background:#fff;color:var(--ink);min-width:0}.field input:focus,.field textarea:focus,.field select:focus{outline:2px solid rgba(11,145,138,.27);border-color:var(--teal)}.tools{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}.btn{border:1px solid #cbdde6;border-radius:9px;background:white;color:var(--navy);padding:9px 12px;font-size:13px;font-weight:700;transition:background .15s}.btn:hover{background:#e9f3f9}.btn.primary{background:var(--navy);color:white;border-color:var(--navy)}.btn.primary:hover{background:var(--navy2)}.btn.success{background:var(--teal);border-color:var(--teal);color:white}.btn.danger{color:var(--danger);border-color:#efc2c2}.btn.danger:hover{background:var(--dsoft)}.btn.small{font-size:12px;padding:7px 9px}.status{font-size:12px;color:var(--sub);margin:10px 0 0}.caution{padding:12px 14px;background:var(--wsoft);color:#66430b;border-radius:10px;border:1px solid #f4dfae;font-size:12px;margin:12px 0 0}
+.wrapper{max-width:1500px;margin:0 auto;padding:18px 18px 35px}.toolbar,.surface,.sidebar,.slide{background:var(--white);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}.toolbar{padding:17px 20px;margin-bottom:15px}.toolbar-top{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap;margin-bottom:14px}.toolbar h2{font-size:16px;margin:0}.tag{font-size:11px;font-weight:700;color:var(--navy2);background:var(--blue-soft);padding:5px 10px;border-radius:40px}.meta{display:grid;grid-template-columns:1fr 1.1fr 1fr 1fr;gap:11px}.field label{display:block;font-size:12px;font-weight:700;color:var(--sub);margin-bottom:5px}.field input,.field select,.field textarea{width:100%;border:1px solid #c8d9e3;border-radius:10px;padding:10px 11px;background:#fff;color:var(--ink);min-width:0}.field input:focus,.field textarea:focus,.field select:focus{outline:2px solid rgba(11,145,138,.27);border-color:var(--teal)}.tools{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}.btn{border:1px solid #cbdde6;border-radius:9px;background:white;color:var(--navy);padding:9px 12px;font-size:13px;font-weight:700;transition:background .15s}.btn:hover{background:#e9f3f9}.btn.primary{background:var(--navy);color:white;border-color:var(--navy)}.btn.primary:hover{background:var(--navy2)}.btn.success{background:var(--teal);border-color:var(--teal);color:white}.btn.danger{color:var(--danger);border-color:#efc2c2}.btn.danger:hover{background:var(--dsoft)}.btn.small{font-size:12px;padding:7px 9px}.status{font-size:12px;color:var(--sub);margin:10px 0 0}.caution{padding:12px 14px;background:var(--wsoft);color:#66430b;border-radius:10px;border:1px solid #f4dfae;font-size:12px;margin:12px 0 0}
 .layout{display:grid;grid-template-columns:250px minmax(0,1fr);gap:16px;align-items:start}.sidebar{padding:13px;position:sticky;top:12px}.nav-heading{font-size:12px;color:var(--sub);font-weight:700;margin:4px 8px 11px}.nav-list{display:grid;gap:5px}.nav-item{border:1px solid transparent;background:transparent;border-radius:10px;padding:11px 9px;text-align:right;color:var(--ink);display:flex;align-items:center;gap:9px;width:100%;min-height:48px}.nav-item:hover{background:#f1f6f9}.nav-item.active{background:var(--blue-soft);color:var(--navy);border-color:#cae3ef;font-weight:700}.nav-num{width:30px;height:30px;flex:0 0 30px;border:1px solid var(--line);border-radius:9px;background:#fff;color:var(--navy2);display:grid;place-items:center;font-size:11px;font-weight:700}.nav-item.active .nav-num{background:var(--navy);color:white;border-color:var(--navy)}.nav-copy{flex:1;min-width:0}.nav-name{font-size:12px;font-weight:700;line-height:1.4}.nav-sub{font-size:11px;color:var(--sub);margin-top:2px}.nav-item.active .nav-sub{color:var(--navy2)}.nav-tick{font-size:14px;color:var(--ok);font-weight:700}
 .slide{padding:23px 25px 24px;min-height:590px}.slide-top{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}.slide-kicker{font-size:12px;color:var(--teal);font-weight:800}.slide h2{font-size:clamp(20px,2.2vw,28px);margin:5px 0 7px;line-height:1.45}.slide-desc{margin:0;color:var(--sub);font-size:13px}.scorebox{background:#f0f7fa;border:1px solid #d7e9f0;border-radius:13px;min-width:200px;padding:11px 17px}.scorebox .big{font-size:25px;font-weight:800;color:var(--navy);line-height:1.4;direction:ltr;text-align:right}.scorebox .scorecaption{font-size:11px;color:var(--sub)}.progress-track{height:7px;background:#e6eef2;border-radius:20px;overflow:hidden;margin:15px 0 10px}.progress-fill{height:100%;background:linear-gradient(90deg,var(--teal),#42b9c3);border-radius:20px;transition:width .2s}.mini-stats{display:flex;gap:14px;flex-wrap:wrap;color:var(--sub);font-size:12px;margin-bottom:16px}.mini-stats strong{color:var(--ink)}.info{font-size:12px;color:var(--sub);background:#f4f8fa;border-radius:9px;border:1px solid var(--line);padding:10px 12px;margin:15px 0}.checks{display:grid;gap:11px}.check{border:1px solid var(--line);border-radius:13px;padding:15px 15px 11px;background:white;transition:border-color .2s}.check[data-answer="yes"]{border-right:4px solid var(--ok)}.check[data-answer="partial"]{border-right:4px solid #bf8a26}.check[data-answer="no"]{border-right:4px solid var(--danger)}.check-head{display:flex;align-items:flex-start;gap:11px}.check-no{flex:0 0 31px;height:31px;border-radius:9px;background:#e9f3f7;color:var(--navy2);display:grid;place-items:center;font-size:12px;font-weight:bold}.check-title{margin:0;font-size:14px;font-weight:700;line-height:1.65}.check-hint{margin:4px 0 10px;color:var(--sub);font-size:12px}.answer-group{display:flex;gap:7px;flex-wrap:wrap;margin:0 42px 10px 0}.answer{border:1px solid #cfdde4;border-radius:8px;background:white;color:var(--ink);font-size:12px;padding:7px 10px;min-width:92px}.answer:hover{background:#f0f6f8}.answer.selected[data-value="yes"]{background:var(--oksoft);border-color:var(--ok);color:var(--ok);font-weight:800}.answer.selected[data-value="partial"]{background:var(--wsoft);border-color:#b68425;color:var(--warn);font-weight:800}.answer.selected[data-value="no"]{background:var(--dsoft);border-color:#c74c57;color:var(--danger);font-weight:800}.answer.selected[data-value="unset"]{background:#e4eff5;border-color:var(--navy2)}.note-wrap{margin:0 42px 0 0}.note-wrap input{width:100%;padding:8px 10px;border-radius:8px;background:#fcfdfe;border:1px dashed #cfdee5;font-size:12px}.note-wrap input:focus{outline:2px solid #9ddbd4}.section-free{margin-top:20px;padding:14px;background:#f5f9fb;border:1px solid var(--line);border-radius:12px}.section-free label{display:block;font-weight:700;font-size:13px;margin-bottom:7px}.section-free textarea{resize:vertical;width:100%;min-height:85px;border:1px solid #ccdae3;border-radius:9px;padding:9px 11px;background:white;font-size:13px}.slide-actions{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:22px;padding-top:15px;border-top:1px solid var(--line)}.slide-actions .spacer{flex:1}
 .summary-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:20px 0}.summary-card{border:1px solid var(--line);background:#f7fafb;border-radius:12px;padding:15px}.summary-card .caption{font-size:12px;color:var(--sub)}.summary-card .value{font-size:25px;font-weight:800;color:var(--navy);margin-top:3px;direction:ltr;text-align:right}.summary-card small{display:block;color:var(--sub);font-size:11px}.summary-card.primarysum{background:#eaf4f7;border-color:#cae4eb}.summary-card.good .value{color:var(--ok)}.summary-card.warn .value{color:var(--warn)}.sum-title{font-size:16px;margin:27px 0 12px}.table-scroll{overflow:auto;border-radius:11px;border:1px solid var(--line)}.score-table{border-collapse:collapse;width:100%;font-size:12px;min-width:600px}.score-table th,.score-table td{padding:11px 12px;border-bottom:1px solid var(--line);text-align:right;vertical-align:top}.score-table th{background:#f0f6f8;font-size:12px;color:var(--navy)}.score-table tbody tr:last-child td{border-bottom:none}.score-table td:nth-child(3){font-weight:700}.score-table tfoot{font-weight:800;background:#edf6f8}.pill{display:inline-block;border-radius:60px;padding:3px 9px;background:#e8f0f5;color:#426173;font-size:11px;font-weight:700}.pill.done{background:var(--oksoft);color:var(--ok)}.pill.pending{background:var(--wsoft);color:var(--warn)}.findings{display:grid;gap:10px}.finding{border:1px solid var(--line);border-radius:11px;padding:12px 13px;background:#fff}.finding.critical{border-right:3px solid var(--danger)}.finding.partial{border-right:3px solid #c18a2d}.finding.optional{border-right:3px solid var(--navy2)}.finding .f-top{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:11px;color:var(--sub)}.finding p{margin:7px 0 0;font-size:13px;line-height:1.7}.finding .f-note{font-weight:700;color:var(--navy2)}.empty{background:var(--oksoft);border:1px solid #cde8d5;padding:13px;border-radius:12px;color:var(--ok);font-size:13px}.pending-box{padding:12px 15px;border:1px solid #eddfb8;background:#fffaec;border-radius:10px;font-size:12px}.pending-box p{margin:4px 0}.footer{text-align:center;color:var(--sub);font-size:11px;line-height:1.8;margin-top:18px}.print-header{display:none}.fileinput{display:none}
@@ -46,8 +46,9 @@
  <div class="toolbar-top"><h2>بيانات التقييم</h2><span class="tag" id="save-badge">الحفظ على هذا الجهاز</span></div>
  <div class="meta">
   <div class="field"><label for="contractorNumber">رقم المقاول</label><input id="contractorNumber" autocomplete="off" inputmode="numeric" placeholder="أدخل رقم المقاول" /></div>
-  <div class="field"><label for="auditor">اسم المدقق</label><input id="auditor" autocomplete="off" placeholder="اختياري" /></div>
+  <div class="field"><label for="auditor">اسم المدقق <span aria-hidden="true" style="color:#b3333d">*</span></label><input id="auditor" autocomplete="name" placeholder="إلزامي — اسم المدقق" required aria-required="true" /></div>
   <div class="field"><label for="audit-date">تاريخ التقييم</label><input id="audit-date" type="date" /></div>
+  <div class="field"><label for="sector">القطاع</label><input id="sector" autocomplete="off" placeholder="مثال: القطاع الشرقي" /></div>
  </div>
  <div class="tools">
  <button type="button" class="btn success" data-action="new">+ تقييم مقاول جديد</button>
@@ -701,7 +702,7 @@ const fmt=num=>Number(num.toFixed(2)).toLocaleString('ar-SA',{maximumFractionDig
 const pad=x=>String(x).padStart(2,'0');
 const localDate=()=>{const d=new Date();return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;};
 const makeId=()=>`${Date.now()}-${Math.random().toString(36).slice(2,10)}`;
-const createRecord=()=>({id:makeId(),schemaVersion:4,contractorNumber:'',auditor:'',date:localDate(),answers:{},criterionNotes:{},sectionNotes:{}});
+const createRecord=()=>({id:makeId(),schemaVersion:4,contractorNumber:'',auditor:'',date:localDate(),sector:'',answers:{},criterionNotes:{},sectionNotes:{}});
 function validTemplate(template){
  if(!Array.isArray(template)||template.length!==12)return null;
  const defs=cloneDefaults();
@@ -731,7 +732,7 @@ function normalizeRecord(record){
  };
  const transform=(data)=>{const out={};for(const [key,val] of Object.entries(data||{})){const k=convertKey(key);if(k)out[k]=val;}return out;};
  const {company, ...fields}=r; // اسم المقاول لا يُطلب ولا يُحفظ في النسخة الحالية.
- return {...fields,id:r.id||makeId(),schemaVersion:4,contractorNumber:r.contractorNumber||'',auditor:r.auditor||'',date:r.date||localDate(),answers:transform(r.answers),criterionNotes:transform(r.criterionNotes),sectionNotes:{...(r.sectionNotes||{})}};
+ return {...fields,id:r.id||makeId(),schemaVersion:4,contractorNumber:r.contractorNumber||'',auditor:r.auditor||'',date:r.date||localDate(),sector:r.sector||'',answers:transform(r.answers),criterionNotes:transform(r.criterionNotes),sectionNotes:{...(r.sectionNotes||{})}};
 }
 function init(){
  try{const probe='__qualifier_probe__';localStorage.setItem(probe,'ok');localStorage.removeItem(probe);}catch(e){storageOk=false;}
@@ -772,7 +773,7 @@ function calcAll(rec=current()){
 }
 function renderAll(){
  const rec=current();
- ['contractorNumber','auditor'].forEach(key=>{el(key).value=rec[key]||'';});el('audit-date').value=rec.date||localDate();
+ ['contractorNumber','auditor','sector'].forEach(key=>{el(key).value=rec[key]||'';});el('audit-date').value=rec.date||localDate();
  renderNav();renderSlide();save();
 }
 function renderNav(){
@@ -825,8 +826,8 @@ function statusLines(items, status){
 }
 function renderSummary(){
  const rec=current(),all=calcAll(rec),groups=groupFindings(rec),pct=all.reviewedMax?100*all.earned/all.reviewedMax:0;
- let html=`<section class="slide is-summary" data-page="13"><div class="print-header"><h2>تقرير تدقيق متطلبات تأهيل المقاولين</h2><div>رقم المقاول: ${escapeHTML(rec.contractorNumber||'—')} · المدقق: ${escapeHTML(rec.auditor||'—')} · التاريخ: ${escapeHTML(rec.date||'—')}</div></div>`;
- html+=`<div class="slide-top"><div><div class="slide-kicker">الصفحة 13 · لوحة تجميع تلقائي</div><h2>النتيجة النهائية والملاحظات</h2><p class="slide-desc">رقم المقاول: ${escapeHTML(rec.contractorNumber||'لم يُدخل')} · ${escapeHTML(rec.date||'تاريخ غير محدد')}</p></div><span class="tag">${all.complete?'جميع الاستبيانات مكتملة':'النتيجة مؤقتة حتى اكتمال الاستبيانات'}</span></div>`;
+ let html=`<section class="slide is-summary" data-page="13"><div class="print-header"><h2>تقرير تدقيق متطلبات تأهيل المقاولين</h2><div>رقم المقاول: ${escapeHTML(rec.contractorNumber||'—')} · المدقق: ${escapeHTML(rec.auditor||'—')} · التاريخ: ${escapeHTML(rec.date||'—')} · القطاع: ${escapeHTML(rec.sector||'—')}</div></div>`;
+ html+=`<div class="slide-top"><div><div class="slide-kicker">الصفحة 13 · لوحة تجميع تلقائي</div><h2>النتيجة النهائية والملاحظات</h2><p class="slide-desc">رقم المقاول: ${escapeHTML(rec.contractorNumber||'لم يُدخل')} · المدقق: ${escapeHTML(rec.auditor||'لم يُدخل')} · ${escapeHTML(rec.date||'تاريخ غير محدد')} · ${escapeHTML(rec.sector||'القطاع غير محدد')}</p></div><span class="tag">${all.complete?'جميع الاستبيانات مكتملة':'النتيجة مؤقتة حتى اكتمال الاستبيانات'}</span></div>`;
  html+=`<div class="summary-cards"><div class="summary-card primarysum ${all.complete?'good':'warn'}"><div class="caption">${all.complete?'النتيجة النهائية / 100':'درجات مكتسبة حتى الآن / 100'}</div><div class="value">${fmt(all.earned)} / 100</div><small>${all.complete?'نتيجة نهائية محسوبة من 12 بندًا':'مؤقتة: البنود غير المقيمة لا تُعتبر غير مستوفاة'}</small></div><div class="summary-card"><div class="caption">${all.complete?'نسبة الاستيفاء النهائية':'نسبة استيفاء الأسئلة التي قُيّمت'}</div><div class="value">${fmt(all.complete?all.earned:pct)}%</div><small>${all.complete?'من إجمالي الدرجة':'لا تشمل الأسئلة التي لم تُقيّم'}</small></div><div class="summary-card"><div class="caption">إنجاز التقييم</div><div class="value">${all.finished} / 12</div><small>${all.answered} من ${all.n} شرطًا · ${all.missing} غير مستوفٍ · ${all.partial} جزئي</small></div></div>`;
  if(!all.complete){html+='<div class="pending-box"><strong>لا تزال النتيجة النهائية غير مكتملة.</strong> تُعرض الدرجات المكتسبة والنسبة للأسئلة التي جرى تقييمها فقط؛ اكتمال جميع الأسئلة شرط لإظهار نتيجة نهائية صحيحة من 100.</div>';}
  html+=`<h3 class="sum-title">ملخص درجات البنود الاثني عشر</h3><div class="table-scroll"><table class="score-table"><thead><tr><th>#</th><th>بند التأهيل</th><th>الدرجة</th><th>الوزن</th><th>الاستيفاء</th><th>حالة التقييم</th></tr></thead><tbody>`;
@@ -855,6 +856,14 @@ function renderSummary(){
  el('main-content').innerHTML=html;
 }
 function gotoSlide(to){slide=Math.max(0,Math.min(12,to));renderNav();renderSlide();save();window.scrollTo({top:0,behavior:'instant'});}
+function ensureAuditor(){
+ const input=el('auditor');
+ if(input.value.trim()){input.setCustomValidity('');return true;}
+ input.setCustomValidity('اسم المدقق إلزامي قبل تسجيل التقييم أو إصدار التقرير.');
+ input.reportValidity();input.focus();
+ el('storage-message').textContent='يرجى إدخال اسم المدقق أولًا؛ هذا الحقل إلزامي.';
+ return false;
+}
 function onClick(e){
  const b=e.target.closest('button[data-action]');if(!b)return;
  const a=b.dataset.action;
@@ -885,6 +894,7 @@ function onClick(e){
   lastDeleted=null;renderNav();renderSlide();save();return;
  }
  if(a==='answer'){
+  if(!ensureAuditor())return;
   const rec=current(),i=Number(b.dataset.section),j=Number(b.dataset.question),key=answerKey(i,j),value=b.dataset.value;
   if(rec.answers[key]===value)delete rec.answers[key];else rec.answers[key]=value;
   renderNav();renderSlide();save();return;
@@ -903,10 +913,10 @@ function onClick(e){
   const r=current();r.answers={};r.criterionNotes={};r.sectionNotes={};slide=0;renderAll();return;
  }
  if(a==='json')return exportJSON();
- if(a==='csv')return exportCSV();
+ if(a==='csv'){if(!ensureAuditor())return;return exportCSV();}
  if(a==='import')return el('import-file').click();
- if(a==='print'){gotoSlide(12);setTimeout(()=>window.print(),160);return;}
- if(a==='copy')return copySummary();
+ if(a==='print'){if(!ensureAuditor())return;gotoSlide(12);setTimeout(()=>window.print(),160);return;}
+ if(a==='copy'){if(!ensureAuditor())return;return copySummary();}
 }
 function onInput(e){
  const r=current(),t=e.target;
@@ -915,7 +925,7 @@ function onInput(e){
   if(item&&['q','hint'].includes(t.dataset.editField)){item[t.dataset.editField]=t.value;save();}
   return;
  }
- if(['contractorNumber','auditor','audit-date'].includes(t.id)){r[t.id==='audit-date'?'date':t.id]=t.value;save();return;}
+ if(['contractorNumber','auditor','audit-date','sector'].includes(t.id)){if(t.id==='auditor')t.setCustomValidity('');r[t.id==='audit-date'?'date':t.id]=t.value;save();return;}
  if(t.dataset.criterionNote){r.criterionNotes[t.dataset.criterionNote]=t.value;save();return;}
  if(t.dataset.sectionNote!==undefined){r.sectionNotes[t.dataset.sectionNote]=t.value;save();return;}
 }
@@ -931,8 +941,8 @@ function exportJSON(){
  el('storage-message').textContent='تم تجهيز نسخة احتياطية تشمل المؤشرات المعدّلة وجميع المقاولين ودرجاتهم. يمكنك نقلها إلى جهاز آخر.';
 }
 function exportCSV(){
- const r=current(),rows=[['رقم المقاول','المدقق','التاريخ','رقم البند','البند','وزن البند','رقم الشرط','معرّف المؤشر','سؤال التدقيق','دليل التحقق','الحالة','نقاط السؤال المكتسبة','نقاط السؤال الكاملة','ملاحظة المدقق']];
- SECTIONS.forEach((sec,i)=>sec.items.forEach((item,j)=>{const key=answerKey(i,j),v=r.answers[key],unit=sec.max/sec.items.length;rows.push([r.contractorNumber,r.auditor,r.date,i+1,sec.title,sec.max,j+1,item.id,item.q,item.hint,stateLabels[v]||'لم يُقيّم',v in answersValue?(unit*answersValue[v]).toFixed(3):'',unit.toFixed(3),r.criterionNotes[key]||'']);}));
+ const r=current(),rows=[['رقم المقاول','المدقق','التاريخ','القطاع','رقم البند','البند','وزن البند','رقم الشرط','معرّف المؤشر','سؤال التدقيق','دليل التحقق','الحالة','نقاط السؤال المكتسبة','نقاط السؤال الكاملة','ملاحظة المدقق']];
+ SECTIONS.forEach((sec,i)=>sec.items.forEach((item,j)=>{const key=answerKey(i,j),v=r.answers[key],unit=sec.max/sec.items.length;rows.push([r.contractorNumber,r.auditor,r.date,r.sector||'',i+1,sec.title,sec.max,j+1,item.id,item.q,item.hint,stateLabels[v]||'لم يُقيّم',v in answersValue?(unit*answersValue[v]).toFixed(3):'',unit.toFixed(3),r.criterionNotes[key]||'']);}));
  rows.push([]);rows.push(['ملاحظات عامة للبنود']);SECTIONS.forEach((s,i)=>{if(r.sectionNotes[i])rows.push([s.title,r.sectionNotes[i]]);});
  const csv='\ufeff'+rows.map(row=>row.map(v=>`"${String(v??'').replace(/"/g,'""')}"`).join(',')).join('\r\n');download(`تفاصيل_تقييم_${safeName()}.csv`,csv,'text/csv;charset=utf-8');
 }
@@ -956,7 +966,7 @@ async function importFile(e){
 }
 function plainSummary(){
  const r=current(),all=calcAll(r),groups=groupFindings(r);
- let parts=[`تقرير تدقيق متطلبات تأهيل المقاولين`,`رقم المقاول: ${r.contractorNumber||'—'} | المدقق: ${r.auditor||'—'} | التاريخ: ${r.date||'—'}`,`${all.complete?'النتيجة النهائية':'الدرجات المكتسبة مؤقتًا'}: ${fmt(all.earned)} / 100`,`البنود المكتملة: ${all.finished} / 12`,``, 'الدرجات:'];
+ let parts=[`تقرير تدقيق متطلبات تأهيل المقاولين`,`رقم المقاول: ${r.contractorNumber||'—'} | المدقق: ${r.auditor||'—'} | التاريخ: ${r.date||'—'} | القطاع: ${r.sector||'—'}`,`${all.complete?'النتيجة النهائية':'الدرجات المكتسبة مؤقتًا'}: ${fmt(all.earned)} / 100`,`البنود المكتملة: ${all.finished} / 12`,``, 'الدرجات:'];
  all.rows.forEach((s,i)=>parts.push(`${i+1}. ${SECTIONS[i].title}: ${s.answered?fmt(s.earned):'—'} / ${s.max}${s.complete?'':' (غير مكتمل)'}`));
  parts.push('', 'ملخص البنود:');
  groups.forEach(g=>{
