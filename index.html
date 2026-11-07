@@ -1,0 +1,977 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="color-scheme" content="light" />
+<title>منصة تدقيق تأهيل المقاولين | مؤشرات قابلة للتحرير المباشر · ملخص موحّد للملاحظات</title>
+<style>
+:root{--navy:#07365a;--navy2:#0b5272;--teal:#0b918a;--teal-soft:#e4f6f3;--blue-soft:#e9f3fa;--bg:#f2f6f8;--white:#fff;--ink:#122f44;--sub:#5e7486;--line:#d7e3ea;--danger:#9a2e38;--dsoft:#fff0f0;--warn:#8b5906;--wsoft:#fff6e1;--ok:#13714a;--oksoft:#e6f5ec;--shadow:0 9px 30px rgba(11,52,78,.065);font-family:Tahoma,'Segoe UI',Arial,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);line-height:1.65}button,input,textarea,select{font:inherit}button{cursor:pointer}button:disabled{opacity:.43;cursor:default}a{color:var(--navy)}
+.header{background:linear-gradient(118deg,#083b61 0%,#0a5475 65%,#0b8b87 100%);color:white;padding:25px max(18px,calc((100vw - 1500px)/2));position:relative;overflow:hidden}.header:after{content:'';position:absolute;left:-70px;top:-120px;border:60px solid rgba(255,255,255,.05);border-radius:100%;width:260px;height:260px;pointer-events:none}.header-inner{max-width:1500px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:24px;position:relative;z-index:1}.eyebrow{font-size:12px;letter-spacing:.2px;opacity:.85;font-weight:700}.header h1{font-size:clamp(20px,2.6vw,32px);margin:6px 0 5px;line-height:1.4}.header p{margin:0;color:#e5f5fb;font-size:13px}.brandmark{display:flex;align-items:center;justify-content:center;min-width:84px;height:70px;border:1px solid rgba(255,255,255,.35);border-radius:18px;background:rgba(255,255,255,.1);font-size:12px;font-weight:700;text-align:center;padding:7px}
+.wrapper{max-width:1500px;margin:0 auto;padding:18px 18px 35px}.toolbar,.surface,.sidebar,.slide{background:var(--white);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}.toolbar{padding:17px 20px;margin-bottom:15px}.toolbar-top{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap;margin-bottom:14px}.toolbar h2{font-size:16px;margin:0}.tag{font-size:11px;font-weight:700;color:var(--navy2);background:var(--blue-soft);padding:5px 10px;border-radius:40px}.meta{display:grid;grid-template-columns:1.4fr 1fr 180px;gap:11px}.field label{display:block;font-size:12px;font-weight:700;color:var(--sub);margin-bottom:5px}.field input,.field select,.field textarea{width:100%;border:1px solid #c8d9e3;border-radius:10px;padding:10px 11px;background:#fff;color:var(--ink);min-width:0}.field input:focus,.field textarea:focus,.field select:focus{outline:2px solid rgba(11,145,138,.27);border-color:var(--teal)}.tools{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}.btn{border:1px solid #cbdde6;border-radius:9px;background:white;color:var(--navy);padding:9px 12px;font-size:13px;font-weight:700;transition:background .15s}.btn:hover{background:#e9f3f9}.btn.primary{background:var(--navy);color:white;border-color:var(--navy)}.btn.primary:hover{background:var(--navy2)}.btn.success{background:var(--teal);border-color:var(--teal);color:white}.btn.danger{color:var(--danger);border-color:#efc2c2}.btn.danger:hover{background:var(--dsoft)}.btn.small{font-size:12px;padding:7px 9px}.status{font-size:12px;color:var(--sub);margin:10px 0 0}.caution{padding:12px 14px;background:var(--wsoft);color:#66430b;border-radius:10px;border:1px solid #f4dfae;font-size:12px;margin:12px 0 0}
+.layout{display:grid;grid-template-columns:250px minmax(0,1fr);gap:16px;align-items:start}.sidebar{padding:13px;position:sticky;top:12px}.nav-heading{font-size:12px;color:var(--sub);font-weight:700;margin:4px 8px 11px}.nav-list{display:grid;gap:5px}.nav-item{border:1px solid transparent;background:transparent;border-radius:10px;padding:11px 9px;text-align:right;color:var(--ink);display:flex;align-items:center;gap:9px;width:100%;min-height:48px}.nav-item:hover{background:#f1f6f9}.nav-item.active{background:var(--blue-soft);color:var(--navy);border-color:#cae3ef;font-weight:700}.nav-num{width:30px;height:30px;flex:0 0 30px;border:1px solid var(--line);border-radius:9px;background:#fff;color:var(--navy2);display:grid;place-items:center;font-size:11px;font-weight:700}.nav-item.active .nav-num{background:var(--navy);color:white;border-color:var(--navy)}.nav-copy{flex:1;min-width:0}.nav-name{font-size:12px;font-weight:700;line-height:1.4}.nav-sub{font-size:11px;color:var(--sub);margin-top:2px}.nav-item.active .nav-sub{color:var(--navy2)}.nav-tick{font-size:14px;color:var(--ok);font-weight:700}
+.slide{padding:23px 25px 24px;min-height:590px}.slide-top{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}.slide-kicker{font-size:12px;color:var(--teal);font-weight:800}.slide h2{font-size:clamp(20px,2.2vw,28px);margin:5px 0 7px;line-height:1.45}.slide-desc{margin:0;color:var(--sub);font-size:13px}.scorebox{background:#f0f7fa;border:1px solid #d7e9f0;border-radius:13px;min-width:200px;padding:11px 17px}.scorebox .big{font-size:25px;font-weight:800;color:var(--navy);line-height:1.4;direction:ltr;text-align:right}.scorebox .scorecaption{font-size:11px;color:var(--sub)}.progress-track{height:7px;background:#e6eef2;border-radius:20px;overflow:hidden;margin:15px 0 10px}.progress-fill{height:100%;background:linear-gradient(90deg,var(--teal),#42b9c3);border-radius:20px;transition:width .2s}.mini-stats{display:flex;gap:14px;flex-wrap:wrap;color:var(--sub);font-size:12px;margin-bottom:16px}.mini-stats strong{color:var(--ink)}.info{font-size:12px;color:var(--sub);background:#f4f8fa;border-radius:9px;border:1px solid var(--line);padding:10px 12px;margin:15px 0}.checks{display:grid;gap:11px}.check{border:1px solid var(--line);border-radius:13px;padding:15px 15px 11px;background:white;transition:border-color .2s}.check[data-answer="yes"]{border-right:4px solid var(--ok)}.check[data-answer="partial"]{border-right:4px solid #bf8a26}.check[data-answer="no"]{border-right:4px solid var(--danger)}.check-head{display:flex;align-items:flex-start;gap:11px}.check-no{flex:0 0 31px;height:31px;border-radius:9px;background:#e9f3f7;color:var(--navy2);display:grid;place-items:center;font-size:12px;font-weight:bold}.check-title{margin:0;font-size:14px;font-weight:700;line-height:1.65}.check-hint{margin:4px 0 10px;color:var(--sub);font-size:12px}.answer-group{display:flex;gap:7px;flex-wrap:wrap;margin:0 42px 10px 0}.answer{border:1px solid #cfdde4;border-radius:8px;background:white;color:var(--ink);font-size:12px;padding:7px 10px;min-width:92px}.answer:hover{background:#f0f6f8}.answer.selected[data-value="yes"]{background:var(--oksoft);border-color:var(--ok);color:var(--ok);font-weight:800}.answer.selected[data-value="partial"]{background:var(--wsoft);border-color:#b68425;color:var(--warn);font-weight:800}.answer.selected[data-value="no"]{background:var(--dsoft);border-color:#c74c57;color:var(--danger);font-weight:800}.answer.selected[data-value="unset"]{background:#e4eff5;border-color:var(--navy2)}.note-wrap{margin:0 42px 0 0}.note-wrap input{width:100%;padding:8px 10px;border-radius:8px;background:#fcfdfe;border:1px dashed #cfdee5;font-size:12px}.note-wrap input:focus{outline:2px solid #9ddbd4}.section-free{margin-top:20px;padding:14px;background:#f5f9fb;border:1px solid var(--line);border-radius:12px}.section-free label{display:block;font-weight:700;font-size:13px;margin-bottom:7px}.section-free textarea{resize:vertical;width:100%;min-height:85px;border:1px solid #ccdae3;border-radius:9px;padding:9px 11px;background:white;font-size:13px}.slide-actions{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:22px;padding-top:15px;border-top:1px solid var(--line)}.slide-actions .spacer{flex:1}
+.summary-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:20px 0}.summary-card{border:1px solid var(--line);background:#f7fafb;border-radius:12px;padding:15px}.summary-card .caption{font-size:12px;color:var(--sub)}.summary-card .value{font-size:25px;font-weight:800;color:var(--navy);margin-top:3px;direction:ltr;text-align:right}.summary-card small{display:block;color:var(--sub);font-size:11px}.summary-card.primarysum{background:#eaf4f7;border-color:#cae4eb}.summary-card.good .value{color:var(--ok)}.summary-card.warn .value{color:var(--warn)}.sum-title{font-size:16px;margin:27px 0 12px}.table-scroll{overflow:auto;border-radius:11px;border:1px solid var(--line)}.score-table{border-collapse:collapse;width:100%;font-size:12px;min-width:600px}.score-table th,.score-table td{padding:11px 12px;border-bottom:1px solid var(--line);text-align:right;vertical-align:top}.score-table th{background:#f0f6f8;font-size:12px;color:var(--navy)}.score-table tbody tr:last-child td{border-bottom:none}.score-table td:nth-child(3){font-weight:700}.score-table tfoot{font-weight:800;background:#edf6f8}.pill{display:inline-block;border-radius:60px;padding:3px 9px;background:#e8f0f5;color:#426173;font-size:11px;font-weight:700}.pill.done{background:var(--oksoft);color:var(--ok)}.pill.pending{background:var(--wsoft);color:var(--warn)}.findings{display:grid;gap:10px}.finding{border:1px solid var(--line);border-radius:11px;padding:12px 13px;background:#fff}.finding.critical{border-right:3px solid var(--danger)}.finding.partial{border-right:3px solid #c18a2d}.finding.optional{border-right:3px solid var(--navy2)}.finding .f-top{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:11px;color:var(--sub)}.finding p{margin:7px 0 0;font-size:13px;line-height:1.7}.finding .f-note{font-weight:700;color:var(--navy2)}.empty{background:var(--oksoft);border:1px solid #cde8d5;padding:13px;border-radius:12px;color:var(--ok);font-size:13px}.pending-box{padding:12px 15px;border:1px solid #eddfb8;background:#fffaec;border-radius:10px;font-size:12px}.pending-box p{margin:4px 0}.footer{text-align:center;color:var(--sub);font-size:11px;line-height:1.8;margin-top:18px}.print-header{display:none}.fileinput{display:none}
+.editor-bar{display:flex;align-items:center;justify-content:space-between;gap:13px;flex-wrap:wrap;border:1px solid #a5d8d3;background:#eaf8f6;border-radius:13px;padding:12px 14px;margin:15px 0}.editor-bar strong{color:#074f58;font-size:14px}.editor-sub{font-size:12px;color:#49636d;margin-top:3px}.edit-panel{border-top:1px dashed #b7d2de;margin:13px 0 0;padding:12px 0 0;display:grid;gap:6px}.edit-panel label{font-size:12px;font-weight:700;color:var(--navy)}.edit-panel textarea{background:#fcfffe;min-height:55px;resize:vertical;width:100%;border-radius:9px;border:1px solid #bed8d4;padding:9px 11px;font:inherit;font-size:13px}.edit-panel .danger{justify-self:start;margin-top:5px}.editor-actions{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:14px;border-radius:12px;background:#f3faf9;margin-top:12px;border:1px dashed #add8d3}.editor-actions .editor-sub{width:100%}@media(max-width:710px){.editor-bar{padding:10px;align-items:stretch}.editor-bar button{width:100%}.editor-actions button{flex:1}.edit-panel textarea{min-height:68px}}
+.criterion-fields{flex:1;min-width:0}.criterion-label{display:block;color:#175a69;font-weight:800;font-size:12px;margin-bottom:5px}.criterion-label.muted-label{color:var(--sub);font-weight:600;margin-top:7px}.criterion-text,.hint-text{display:block;width:100%;border:1px solid #8fcac4;border-radius:10px;background:#fcfffe;resize:vertical;padding:10px 12px;color:var(--ink);direction:rtl;text-align:right;line-height:1.7}.criterion-text{font-size:14px;font-weight:700;min-height:65px}.hint-text{font-size:12px;border-color:#cedfe5;background:#f8fbfd;min-height:52px}.criterion-text:focus,.hint-text:focus{outline:3px solid #b0e3dc;border-color:var(--teal);background:white}.criterion-actions{display:flex;justify-content:flex-end;margin:10px 42px 0 0}.group-title{font-size:15px;color:var(--navy)}.group-count{font-size:11px;color:var(--sub);margin-inline-start:auto}.unified-notes{font-size:13px;line-height:1.95;white-space:normal;overflow-wrap:anywhere}.f-top{width:100%}@media(max-width:710px){.criterion-text{font-size:14px;min-height:75px}.criterion-actions{margin-right:0}.group-count{margin-inline-start:0}}
+
+/* ملخص الصفحة 13: قسم آلي لحالات النقص وقسم منفصل لملاحظات المدقق */
+.finding.dual-summary{padding:0;overflow:hidden;border:1px solid #cddfe7;border-right:4px solid var(--navy2);background:#fff}
+.dual-summary .finding-header{padding:11px 14px;background:#f1f7fa;display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;border-bottom:1px solid #d9e7ee}
+.dual-summary .finding-header strong{font-size:15px;color:var(--navy)}
+.dual-summary .finding-header small{color:var(--sub);font-size:11px}
+.dual-summary .report-half{padding:13px 15px}
+.dual-summary .report-half + .report-half{border-top:2px solid #d2e4ea;background:#fcfefe}
+.dual-summary .report-half h4{margin:0 0 8px;font-size:13px;color:var(--navy2)}
+.dual-summary .report-half .empty-line{color:#778a94;font-size:12px;margin:0}
+.dual-summary .status-row{display:flex;align-items:flex-start;gap:8px;margin:6px 0}
+.dual-summary .status-row .status-marker{font-weight:700;font-size:11px;white-space:nowrap;border-radius:7px;padding:2px 7px;flex-shrink:0}
+.dual-summary .status-row.is-no .status-marker{background:#fff0f0;color:#9a2e38}
+.dual-summary .status-row.is-partial .status-marker{background:#fff5da;color:#8b5906}
+.dual-summary .status-row .status-text{font-size:12px;color:var(--ink);line-height:1.7;overflow-wrap:anywhere}
+.dual-summary .manual-note{font-size:12px;margin:6px 0;line-height:1.8;color:#23445a;overflow-wrap:anywhere}
+.dual-summary .manual-note strong{color:var(--navy)}
+.dual-summary .report-count{font-size:11px;color:var(--sub);font-weight:600}
+@media(max-width:710px){.dual-summary .report-half{padding:11px 12px}.dual-summary .status-row{flex-direction:column;gap:3px}}
+@media(max-width:1000px){.meta{grid-template-columns:repeat(2,minmax(0,1fr))}.layout{grid-template-columns:210px minmax(0,1fr)}.sidebar{padding:8px}.slide{padding:19px}.nav-name{font-size:11px}}
+@media(max-width:710px){.header{padding:21px 17px}.brandmark{display:none}.wrapper{padding:11px 9px 26px}.toolbar{padding:13px 12px}.toolbar-top{margin-bottom:12px}.meta{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.field:nth-child(1){grid-column:auto}.field input,.field select{padding:9px}.tools{gap:6px}.btn{font-size:12px;padding:9px 10px}.layout{display:block}.sidebar{position:static;padding:9px;margin-bottom:11px;overflow:hidden}.nav-heading{display:none}.nav-list{display:flex;gap:7px;overflow-x:auto;scrollbar-width:thin;padding-bottom:5px}.nav-item{min-width:125px;max-width:145px;padding:8px 7px;gap:6px;flex-shrink:0;min-height:52px}.nav-num{width:25px;height:28px;flex-basis:25px}.nav-sub{font-size:10px}.slide{padding:15px 12px;min-height:0}.slide-top{align-items:stretch}.scorebox{min-width:0;width:100%;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px 11px}.scorebox .big{font-size:20px}.check{padding:11px 9px}.check-head{gap:7px}.check-title{font-size:13px}.check-hint{font-size:11px}.answer-group{margin-right:0;gap:5px}.answer{padding:7px 5px;min-width:0;flex:1;font-size:11px}.note-wrap{margin-right:0}.summary-cards{grid-template-columns:repeat(2,1fr);gap:8px}.summary-card{padding:12px}.summary-card .value{font-size:21px}.summary-card:nth-child(1){grid-column:1/-1}.mini-stats{gap:10px}}
+@media print{@page{size:A4;margin:13mm}body{background:white;color:black;font-size:10pt}.header,.toolbar,.sidebar,.slide-actions,.footer,.print-hide,.tools,.editor-bar,.editor-actions,.edit-panel{display:none!important}.wrapper,.layout,.slide{display:block;max-width:none;margin:0;padding:0;box-shadow:none;border:none;background:white}.slide:not(.is-summary){display:none!important}.slide{min-height:auto}.print-header{display:block;margin-bottom:14px;border-bottom:2px solid #244e62;padding-bottom:10px}.summary-cards{gap:6px}.summary-card{break-inside:avoid}.score-table{min-width:0;font-size:9pt}.score-table th,.score-table td{padding:5px 6px}.finding{break-inside:avoid}.sum-title{break-after:avoid}.finding p{font-size:9pt}}
+</style>
+</head>
+<body>
+<header class="header"><div class="header-inner"><div><div class="eyebrow">أداة عمل داخلية للمراجعة والتأهيل · نسخة قابلة للتحرير</div><h1>منصة تدقيق متطلبات تأهيل المقاولين</h1><p>12 استبيانًا · مؤشرات قابلة للتعديل · 100 درجة ثابتة · ملخص الصفحة 13 بقسمين لكل بند</p></div><div class="brandmark">السلامة<br>والصحة المهنية</div></div></header>
+<div class="wrapper">
+<section class="toolbar" aria-label="بيانات المقاول وعمليات التقييم">
+ <div class="toolbar-top"><h2>بيانات التقييم</h2><span class="tag" id="save-badge">الحفظ على هذا الجهاز</span></div>
+ <div class="meta">
+  <div class="field"><label for="contractorNumber">رقم المقاول</label><input id="contractorNumber" autocomplete="off" inputmode="numeric" placeholder="أدخل رقم المقاول" /></div>
+  <div class="field"><label for="auditor">اسم المدقق</label><input id="auditor" autocomplete="off" placeholder="اختياري" /></div>
+  <div class="field"><label for="audit-date">تاريخ التقييم</label><input id="audit-date" type="date" /></div>
+ </div>
+ <div class="tools">
+ <button type="button" class="btn success" data-action="new">+ تقييم مقاول جديد</button>
+ <button type="button" class="btn" data-action="choose">التبديل بين المقاولين</button>
+ <button type="button" class="btn" data-action="json">حفظ نسخة احتياطية</button>
+ <button type="button" class="btn" data-action="import">استيراد نسخة</button>
+ <button type="button" class="btn" data-action="csv">تصدير التفاصيل Excel / CSV</button>
+ <button type="button" class="btn" data-action="print">طباعة / حفظ PDF</button>
+ <button type="button" class="btn danger" data-action="reset">تصفير تقييم المقاول الحالي</button>
+ </div>
+ <input type="file" id="import-file" class="fileinput" accept="application/json,.json" aria-label="ملف نسخة احتياطية JSON" />
+ <div class="status" id="storage-message" role="status" aria-live="polite">يُحفظ التقييم محليًا تلقائيًا إذا سمح المتصفح؛ للحفظ بين الجوال والكمبيوتر استخدم النسخة الاحتياطية والاستيراد.</div>
+ </section>
+ <div class="layout"><aside class="sidebar"><div class="nav-heading">الشـرائح · انقر للانتقال</div><nav class="nav-list" id="nav-list" aria-label="أقسام التأهيل"></nav></aside><main id="main-content" aria-live="off"></main></div>
+ <footer class="footer">هذه أداة تقييم داخلية قابلة للتعديل، وليست نموذج اعتماد رسميًا. وزن كل بند ثابت ومجموع البنود 100 درجة؛ تُقسم درجة البند بالتساوي على مؤشرات البند الحالية تلقائيًا. عند حذف مؤشر تُحذف إجابته فقط وتبقى إجابات الآخرين مرتبطة بمعرّفات ثابتة. التعديل على المؤشرات يسري على جميع المقاولين. احتفظ بنسخة احتياطية لنقل عملك بين الأجهزة.</footer>
+</div>
+<script>
+'use strict';
+const DEFAULT_SECTIONS = [
+  {
+    "title": "الهيكل التنظيمي",
+    "max": 5,
+    "desc": "التحقق من وجود هيكل تنظيمي معتمد ووضوح موقع السلامة وارتباطها الإداري والفني",
+    "items": [
+      {"q": "وجود هيكل تنظيمي رسمي باسم الشركة ومطابق لنشاطها ونطاق أعمالها", "hint": "نسخة الهيكل التنظيمي الخاصة بالمنشأة."},
+      {"q": "وجود رقم إصدار أو مرجع واضح وتاريخ اعتماد للهيكل", "hint": "الرقم أو المرجع وتاريخ الاعتماد ظاهران على المستند."},
+      {"q": "اعتماد الهيكل بتوقيع الإدارة العليا المخوّلة", "hint": "توقيع أو اعتماد إلكتروني قابل للتحقق."},
+      {"q": "إدراج المسؤولين عن السلامة والصحة المهنية بمسمياتهم الوظيفية ومواقعهم ضمن التسلسل التنظيمي", "hint": "إظهار المسؤول عن السلامة ومسماه وموقعه ضمن الهيكل دون اشتراط جميع مسميات الشركة."},
+      {"q": "وضوح الارتباط الإداري والفني لمدير السلامة بالمسؤول الأول أو من يفوضه رسميًا", "hint": "تظهر خطوط الارتباط الإداري والفني في الهيكل بشكل يمكن التحقق منه."},
+      {"q": "تغطية الهيكل للمواقع أو المشاريع والنطاق الجغرافي ذي العلاقة", "hint": "نسخة خاصة بالمشروع أو ارتباط واضح بالهيكل العام."}
+    ]
+  },
+  {
+    "title": "ممثلو السلامة والصحة المهنية",
+    "max": 10,
+    "desc": "التحقق من التعيين والكفاءة والتغطية الفعلية",
+    "items": [
+      {
+        "q": "وجود قائمة محدثة بأسماء ممثلي السلامة ومواقع عملهم",
+        "hint": "الأسماء والمواقع ووسائل التواصل."
+      },
+      {
+        "q": "وجود قرارات تكليف أو عقود تثبت الصفة الوظيفية",
+        "hint": "تكليف رسمي أو ما يعادله."
+      },
+      {
+        "q": "توفير سيرة ذاتية مستقلة لكل ممثل دون تكرار لشخص واحد",
+        "hint": "لا يُحتسب الشخص مرتين."
+      },
+      {
+        "q": "ملاءمة المؤهل والخبرة لطبيعة الأنشطة والمخاطر",
+        "hint": "إثبات خبرة ذات صلة."
+      },
+      {
+        "q": "توفر شهادة كوادر أو الاعتماد المهني المطلوب حسب فئة الوظيفة ومتطلبات التأهيل",
+        "hint": "التحقق من السريان والانطباق."
+      },
+      {
+        "q": "توفر الشهادات المهنية والتدريبية الداعمة للكفاءة",
+        "hint": "مثل دورات السلامة المرتبطة بالأعمال، حسب المتطلبات."
+      },
+      {
+        "q": "تحديد صلاحيات ممثلي السلامة وإجراءات الإبلاغ والتصعيد",
+        "hint": "توصيف وظيفي وحق رفع المخاطر."
+      },
+      {
+        "q": "كفاية عدد ممثلي السلامة لتغطية المواقع والورديات ونطاق الأعمال",
+        "hint": "خطة توزيع وتغطية فعلية."
+      },
+      {
+        "q": "اتساق أسماء ومسميات ممثلي السلامة في الهيكل وقائمة الممثلين مع قرارات التكليف والسير الذاتية المقدمة",
+        "hint": "التحقق من تطابق بيانات الممثلين وتكليفاتهم دون ازدواجية أو تناقض في المستندات."
+      },
+      {
+        "q": "وجود خطة بديل عند الغياب مع استمرارية متابعة السلامة",
+        "hint": "ضمان عدم ترك الموقع بلا تغطية."
+      },
+      {
+        "q": "إمكانية التحقق من بيانات الشهادات وصحة المستندات",
+        "hint": "أرقام شهادات أو روابط تحقق إن توفرت."
+      }
+    ]
+  },
+  {
+    "title": "سياسة السلامة والصحة المهنية",
+    "max": 5,
+    "desc": "استبيان السياسة السابق بصيغة مفصلة من 15 نقطة",
+    "items": [
+      {
+        "q": "السياسة تحمل اسم المنشأة وتوضح أنها تخص أعمالها",
+        "hint": "نسخة رسمية واضحة."
+      },
+      {
+        "q": "اعتماد وتوقيع الإدارة العليا ذات الصلاحية",
+        "hint": "توقيع أصلي أو اعتماد معتمد."
+      },
+      {
+        "q": "وجود تاريخ إصدار أو اعتماد وتاريخ مراجعة محدد",
+        "hint": "عدم الاكتفاء بملف بلا تاريخ."
+      },
+      {
+        "q": "ملاءمة السياسة لطبيعة نشاط الشركة وحجمها ومخاطرها",
+        "hint": "ليست نصًا عامًا لا يتصل بالنشاط."
+      },
+      {
+        "q": "التزام صريح بتوفير ظروف عمل آمنة وصحية",
+        "hint": "نص ظاهر ضمن السياسة."
+      },
+      {
+        "q": "الالتزام بالوقاية من إصابات العمل واعتلال الصحة المهني",
+        "hint": "الوقاية وليس التعامل مع الحوادث فقط."
+      },
+      {
+        "q": "الالتزام بالأنظمة السعودية والاشتراطات النظامية ذات العلاقة",
+        "hint": "حسب الأنظمة المعمول بها."
+      },
+      {
+        "q": "الالتزام بالمتطلبات التعاقدية والاشتراطات الأخرى المنطبقة",
+        "hint": "حيث تنطبق متطلبات المالك/المشروع."
+      },
+      {
+        "q": "الالتزام بإزالة الأخطار والحد من مخاطر السلامة",
+        "hint": "بصياغة تعكس التسلسل الوقائي."
+      },
+      {
+        "q": "توفير إطار لوضع أهداف السلامة ومتابعتها",
+        "hint": "رابط واضح بين السياسة والأهداف."
+      },
+      {
+        "q": "الالتزام بالتحسين المستمر لنظام إدارة السلامة والصحة المهنية",
+        "hint": "نص واضح."
+      },
+      {
+        "q": "الالتزام بالتشاور مع العاملين ومشاركتهم",
+        "hint": "بما في ذلك ممثلو العاملين إن وجدوا."
+      },
+      {
+        "q": "وضوح مسؤولية الإدارة العليا عن السلامة",
+        "hint": "دور القيادة ومساءلتها."
+      },
+      {
+        "q": "توفّر السياسة للعاملين والمقاولين والزوار بلغة أو صيغة مفهومة",
+        "hint": "أدلة تعميم أو نشر."
+      },
+      {
+        "q": "وجود دليل على مراجعة السياسة وتحديثها عند الحاجة",
+        "hint": "وفق الإجراء والفترات المعتمدة دون افتراض مدة عامة ثابتة."
+      }
+    ]
+  },
+  {
+    "title": "لائحة وتعليمات السلامة",
+    "max": 15,
+    "desc": "مراجعة لائحة معتمدة ومناسبة لأنشطة المقاول",
+    "items": [
+      {
+        "q": "تقديم لائحة أو دليل سلامة مكتوب خاص بالمنشأة",
+        "hint": "مستند كامل وليس صفحة عناوين."
+      },
+      {
+        "q": "اعتماد اللائحة وتوقيعها من الجهة المخوّلة وتوثيق إصدارها",
+        "hint": "رقم نسخة وتاريخ سريان أو اعتماد."
+      },
+      {
+        "q": "تحديد نطاق انطباق اللائحة على العمال والمقاولين من الباطن والزوار",
+        "hint": "حدود المسؤولية واضحة."
+      },
+      {
+        "q": "تحديد أدوار الإدارة والمشرفين والعمال وممثلي السلامة",
+        "hint": "مسؤوليات قابلة للتنفيذ."
+      },
+      {
+        "q": "تضمين آلية تحديد الأخطار وتقييم المخاطر والسيطرة عليها",
+        "hint": "إحالة واضحة للإجراء التفصيلي."
+      },
+      {
+        "q": "تضمين المتطلبات العامة لتصاريح الأعمال عالية الخطورة",
+        "hint": "الحفريات والارتفاعات والأماكن المحصورة وغيرها وفق النشاط."
+      },
+      {
+        "q": "تضمين الاشتراطات العامة لمعدات الوقاية الشخصية واستخدامها",
+        "hint": "الاختيار، الاستخدام، والاستبدال."
+      },
+      {
+        "q": "تضمين قواعد السلامة بالمعدات والآلات والرفع والكهرباء",
+        "hint": "حسب طبيعة نطاق الأعمال."
+      },
+      {
+        "q": "تضمين ضوابط الحفريات والعمل في الطرق والحركة المرورية",
+        "hint": "عند انطباقها على النشاط."
+      },
+      {
+        "q": "تضمين تنظيم التفتيش والجولات والملاحظات والإجراءات التصحيحية",
+        "hint": "تحديد المتابعة والإغلاق."
+      },
+      {
+        "q": "تضمين تعليمات الإبلاغ عن الحوادث والوقائع الوشيكة والتحقيق",
+        "hint": "إحالة لإجراءات الحوادث."
+      },
+      {
+        "q": "تضمين أساسيات الاستعداد للطوارئ والإخلاء وطلب المساندة",
+        "hint": "إحالة لخطة الطوارئ."
+      },
+      {
+        "q": "تضمين متطلبات التأهيل والتوعية والتدريب والتعليمات للمستجدين",
+        "hint": "من يشمله التدريب ومتى."
+      },
+      {
+        "q": "تحديد أسلوب ضبط المخالفات وتصعيد المخاطر وإيقاف الأعمال غير الآمنة",
+        "hint": "صلاحيات ووسائل تصعيد."
+      },
+      {
+        "q": "وجود آلية لنشر اللائحة وتدريب العاملين عليها ومراجعتها",
+        "hint": "سجلات أو قرائن تطبيق."
+      }
+    ]
+  },
+  {
+    "title": "تقييم المخاطر",
+    "max": 10,
+    "desc": "فحص الإجراء ومصفوفة المخاطر وثلاثة نماذج منفذة",
+    "items": [
+      {
+        "q": "وجود إجراء مكتوب ومعتمد لتحديد الأخطار وتقييم المخاطر",
+        "hint": "إصدار وتوقيع وتاريخ اعتماد."
+      },
+      {
+        "q": "تحديد المسؤوليات عن إعداد التقييم ومراجعته واعتماده",
+        "hint": "من يحضر ومن يعتمد ومن يراجع."
+      },
+      {
+        "q": "تحديد الأنشطة والأعمال والمهام التي تستلزم التقييم",
+        "hint": "يشمل الأعمال الاعتيادية وغير الاعتيادية."
+      },
+      {
+        "q": "وجود مصفوفة واضحة للاحتمالية والشدة ومستويات المخاطر",
+        "hint": "تعريف لكل مستوى وأسلوب حساب."
+      },
+      {
+        "q": "تحديد معايير قبول المخاطر والتصعيد وإيقاف العمل عند اللزوم",
+        "hint": "متى يلزم اعتماد إضافي أو منع بدء العمل."
+      },
+      {
+        "q": "توضيح تسلسل التحكم بالمخاطر من الإزالة حتى معدات الوقاية",
+        "hint": "لا يقتصر على معدات الوقاية."
+      },
+      {
+        "q": "إيضاح تقييم الخطر قبل الضوابط وبعد تطبيقها",
+        "hint": "الخطر المتبقي وطريقة حسابه."
+      },
+      {
+        "q": "تحديد محفزات المراجعة الدورية وعند تغيّر النشاط أو وقوع حادث",
+        "hint": "مدة المراجعة وفق إجراء المنشأة."
+      },
+      {
+        "q": "تقديم ثلاثة تقييمات مخاطر فعلية ومختلفة ترتبط بنطاق أعمال المقاول",
+        "hint": "نماذج مكتملة وليست قوالب فارغة."
+      },
+      {
+        "q": "كل نموذج يحدد المشروع والموقع والنشاط أو المهمة وتاريخ التقييم",
+        "hint": "تمييز كل نموذج عن الآخر."
+      },
+      {
+        "q": "كل نموذج يحدد الأخطار والنتائج المحتملة والأشخاص المتعرضين",
+        "hint": "تفاصيل خاصة بالعمل."
+      },
+      {
+        "q": "كل نموذج يتضمن الضوابط الوقائية المحددة لكل خطر",
+        "hint": "إجراءات قابلة للتحقق في الموقع."
+      },
+      {
+        "q": "كل نموذج يتضمن تقدير الاحتمالية والشدة والدرجة قبل وبعد الضوابط",
+        "hint": "وفق المصفوفة المعتمدة."
+      },
+      {
+        "q": "كل نموذج يحدد مسؤول تنفيذ الضوابط والمدة أو حالة الإغلاق",
+        "hint": "تحديد مالك الإجراء."
+      },
+      {
+        "q": "كل نموذج يحمل أسماء وتوقيعات المعنيين وتواريخ التقييم والمراجعة",
+        "hint": "لا تترك حقول التاريخ والتوقيع فارغة."
+      },
+      {
+        "q": "توافر دليل على إبلاغ العمال بالمخاطر والإجراءات قبل بدء العمل",
+        "hint": "اجتماع توعوي/سجل إحاطة حسب المتاح."
+      }
+    ]
+  },
+  {
+    "title": "خطة وإجراءات التدريب",
+    "max": 10,
+    "desc": "التحقق من النظام، المصفوفة والخطة والسجلات",
+    "items": [
+      {
+        "q": "وجود إجراء مكتوب ومعتمد لإدارة التدريب على السلامة",
+        "hint": "تاريخ اعتماد ونسخة صالحة."
+      },
+      {
+        "q": "تحديد مسؤولية تحديد الاحتياج وتنفيذ التدريب وتوثيقه",
+        "hint": "الموارد والأدوار والاعتماد."
+      },
+      {
+        "q": "تحديد طريقة تحليل الاحتياجات التدريبية حسب الوظائف والمخاطر",
+        "hint": "مصفوفة مؤهلات/احتياجات."
+      },
+      {
+        "q": "وجود مصفوفة تدريب تربط الوظائف بالدورات المطلوبة",
+        "hint": "تشمل الوظائف المعرضة للمخاطر."
+      },
+      {
+        "q": "وجود خطة تدريب دورية بأسماء الدورات والفئات والمواعيد والمسؤولين",
+        "hint": "خطة تنفيذ قابلة للمتابعة."
+      },
+      {
+        "q": "شمول التدريب التعريفي للموظفين الجدد والزوار والمقاولين من الباطن",
+        "hint": "توعية قبل بدء العمل."
+      },
+      {
+        "q": "تضمين تدريب الأعمال عالية الخطورة حسب اختصاص العامل",
+        "hint": "مثل الأماكن المحصورة والرفع والحفر والارتفاعات."
+      },
+      {
+        "q": "تضمين الإحاطات اليومية أو الدورية لمخاطر العمل (TBT)",
+        "hint": "خطة أو سجل تطبيق."
+      },
+      {
+        "q": "وجود آلية لاختبار الكفاءة أو التحقق من استيعاب التدريب",
+        "hint": "نتائج أو تقييم أداء."
+      },
+      {
+        "q": "توفير سجلات حضور وشهادات أو أدلة إتمام فعلية",
+        "hint": "التاريخ والاسم والموضوع والمدرب."
+      },
+      {
+        "q": "تحديد آلية تجديد التدريب عند انتهاء الشهادات أو تغيّر المخاطر",
+        "hint": "خطة لإعادة التأهيل."
+      },
+      {
+        "q": "متابعة تنفيذ الخطة وقياس نسب الالتزام ومعالجة التأخير",
+        "hint": "تقارير متابعة وتحديث."
+      }
+    ]
+  },
+  {
+    "title": "شهادة ISO 45001",
+    "max": 5,
+    "desc": "التحقق من شهادة نظام إدارة السلامة وصلاحيتها",
+    "items": [
+      {
+        "q": "تقديم نسخة واضحة من شهادة ISO 45001 المعتمدة",
+        "hint": "الشهادة كاملة ويمكن قراءتها."
+      },
+      {
+        "q": "تطابق الاسم القانوني للمنشأة في الشهادة مع المنشأة المتقدمة",
+        "hint": "أو مستند رسمي يوضح الصلة."
+      },
+      {
+        "q": "شمول مجال الشهادة للأنشطة أو المواقع المتعلقة بنطاق الأعمال",
+        "hint": "نطاق الاعتماد أو الملحق."
+      },
+      {
+        "q": "سريان الشهادة خلال فترة التقييم",
+        "hint": "تاريخ الانتهاء والمراجعات عند انطباقها."
+      },
+      {
+        "q": "تحديد جهة إصدار الشهادة وبيانات التحقق منها",
+        "hint": "بيانات جهة المنح ورقم الشهادة."
+      },
+      {
+        "q": "إمكانية التحقق من صحة الشهادة والاعتماد عند الحاجة",
+        "hint": "موقع الجهة أو سجل تحقق موثوق."
+      }
+    ]
+  },
+  {
+    "title": "معدات الوقاية الشخصية",
+    "max": 5,
+    "desc": "التحقق من إجراء الاختيار والصرف والفحص والتوثيق",
+    "items": [
+      {
+        "q": "وجود إجراء معتمد لاختيار وتوفير معدات الوقاية الشخصية",
+        "hint": "مستند بإصدار وتاريخ واعتماد."
+      },
+      {
+        "q": "وجود مصفوفة تربط كل مهمة أو خطر بنوع معدات الوقاية المطلوبة",
+        "hint": "لا يقتصر على قائمة عامة."
+      },
+      {
+        "q": "ملاءمة مواصفات معدات الوقاية للمخاطر وطبيعة العمل",
+        "hint": "شهادات أو مواصفات مناسبة عند اللزوم."
+      },
+      {
+        "q": "تحديد آلية صرف المعدات مجانًا للعاملين وفق متطلبات العمل",
+        "hint": "سجل تسليم للعمال."
+      },
+      {
+        "q": "وجود سجلات فعلية تثبت الصرف والاستلام والتجديد",
+        "hint": "أسماء وتواريخ وأنواع."
+      },
+      {
+        "q": "تدريب العاملين على الاستخدام الصحيح والقيود والحفظ",
+        "hint": "إثبات تعليمات أو توعية."
+      },
+      {
+        "q": "وجود نظام لفحص واستبدال المعدات التالفة أو المنتهية",
+        "hint": "مسؤولية الاستبدال وآليته."
+      },
+      {
+        "q": "تغطية الاحتياجات الخاصة للزوار والمقاولين من الباطن",
+        "hint": "حسب ضوابط الموقع."
+      }
+    ]
+  },
+  {
+    "title": "إجراءات وتصاريح العمل",
+    "max": 15,
+    "desc": "تدقيق الإجراء التفصيلي وثلاثة تصاريح عمل مكتملة",
+    "items": [
+      {
+        "q": "وجود إجراء مكتوب ومعتمد لإصدار تصاريح العمل والتحكم بها",
+        "hint": "إصدار وتاريخ اعتماد ومسؤول إجراء."
+      },
+      {
+        "q": "تحديد الأعمال التي تتطلب تصريحًا وأنواع التصاريح بوضوح",
+        "hint": "مثل الحفر، العمل الساخن، الأماكن المحصورة، الارتفاعات، الكهرباء، الرفع بحسب النشاط."
+      },
+      {
+        "q": "تحديد صلاحية ومسؤوليات مصدر التصريح ومستلمه ومراقب العمل",
+        "hint": "فصل الأدوار وخط التصعيد."
+      },
+      {
+        "q": "اشتراط تقييم المخاطر أو تحليل المهمة قبل التصريح",
+        "hint": "ربط التصريح بالمخاطر الفعلية."
+      },
+      {
+        "q": "تحديد إجراءات فحص موقع العمل قبل الإصدار وتوثيق جاهزيته",
+        "hint": "قائمة تحقق قبل بدء النشاط."
+      },
+      {
+        "q": "تحديد الضوابط والموانع المطلوبة لكل نوع تصريح",
+        "hint": "مثال: العزل، تدعيم الحفر، منع الاشتعال، التهوية."
+      },
+      {
+        "q": "تحديد معدات الوقاية المطلوبة لكل نوع عمل عالي الخطورة",
+        "hint": "تُذكر المتطلبات حسب المهمة، لا رؤوس أقلام عامة."
+      },
+      {
+        "q": "تحديد الاختبارات والقياسات أو شهادات الكفاءة اللازمة عند الاقتضاء",
+        "hint": "مثل قياس الغازات أو فحص المعدات."
+      },
+      {
+        "q": "تحديد آلية العزل وفصل مصادر الطاقة (LOTO) عند انطباقها",
+        "hint": "إجراءات تأمين وفحص قبل العمل."
+      },
+      {
+        "q": "تحديد المتطلبات الخاصة بالطوارئ والإنقاذ والمراقبة عند الحاجة",
+        "hint": "مثل مراقب الأماكن المحصورة."
+      },
+      {
+        "q": "تحديد مدة الصلاحية وآلية التجديد أو التمديد وإعادة التحقق",
+        "hint": "تواريخ وساعات وشروط واضحة."
+      },
+      {
+        "q": "تحديد آلية الإيقاف والتعليق والإلغاء عند تغيير الظروف",
+        "hint": "توقف العمل ورفع التصريح عند الخطر."
+      },
+      {
+        "q": "تحديد آلية التنسيق بين الأعمال المتزامنة والمتداخلة",
+        "hint": "تعارضات الأعمال وتصاريح مشتركة."
+      },
+      {
+        "q": "تحديد إجراءات إغلاق التصريح وإعادة الموقع لوضع آمن",
+        "hint": "توثيق التحقق والتسليم."
+      },
+      {
+        "q": "تقديم ثلاثة تصاريح عمل فعلية مكتملة لأنشطة ذات صلة",
+        "hint": "ليست مجرد نماذج فارغة أو مكررة."
+      },
+      {
+        "q": "كل تصريح يتضمن العمل والموقع والتاريخ والمدة والأطراف الموقعة",
+        "hint": "اعتماد المصدر والمستلم والأطراف المطلوبة."
+      },
+      {
+        "q": "كل تصريح يوضح تقييم المخاطر والضوابط والفحوص المطلوبة",
+        "hint": "مرفقات وفحوص قبل التنفيذ عند الاقتضاء."
+      },
+      {
+        "q": "تطابق التصاريح الثلاثة مع الإجراء المعتمد ونماذجه",
+        "hint": "نفس الصلاحيات وخطوات الاعتماد والمتطلبات."
+      }
+    ]
+  },
+  {
+    "title": "خطة الاستجابة للطوارئ",
+    "max": 10,
+    "desc": "فحص الخطة المعتمدة وأدوار الاستجابة والتمارين",
+    "items": [
+      {
+        "q": "وجود خطة طوارئ مكتوبة ومعتمدة خاصة بالأنشطة أو المشروع",
+        "hint": "اسم الجهة والإصدار والتاريخ."
+      },
+      {
+        "q": "تحديد السيناريوهات المحتملة بناء على تقييم المخاطر",
+        "hint": "حريق، إصابة، تسرب كيميائي، انهيار حفر أو غيرها حسب النشاط."
+      },
+      {
+        "q": "تحديد قائد الاستجابة وأدوار الفريق والبدلاء والصلاحيات",
+        "hint": "مصفوفة مسؤوليات واضحة."
+      },
+      {
+        "q": "وجود أرقام اتصال داخلية وخارجية محدثة ومسار التبليغ",
+        "hint": "اتصال بالإسعاف والدفاع المدني والمالك حسب الحاجة."
+      },
+      {
+        "q": "تحديد إجراءات الإنذار والإخلاء ومسارات الخروج ونقاط التجمع",
+        "hint": "خرائط أو آلية واضحة للموقع."
+      },
+      {
+        "q": "تحديد ترتيبات الإنقاذ والإسعافات الأولية ونقل المصابين",
+        "hint": "تجهيزات ومسؤولون مؤهلون."
+      },
+      {
+        "q": "تحديد المعدات والمواد اللازمة للطوارئ ومواقعها وفحص جاهزيتها",
+        "hint": "طفايات، شنط إسعاف، معدات إنقاذ حسب السيناريو."
+      },
+      {
+        "q": "تحديد آلية التعامل مع المواد الخطرة أو التسربات عند انطباقها",
+        "hint": "أوراق بيانات سلامة واحتواء وتسلسل اتصالات."
+      },
+      {
+        "q": "مراعاة الورديات والعمال والزوار وذوي الاحتياجات الخاصة",
+        "hint": "خطة لا تعتمد على شخص واحد."
+      },
+      {
+        "q": "التنسيق مع الجهات الخارجية وأصحاب المواقع والمتأثرين عند الاقتضاء",
+        "hint": "آلية طلب الدعم والمساندة."
+      },
+      {
+        "q": "تنفيذ تدريبات/فرضيات طوارئ وتوثيق الحضور والنتائج",
+        "hint": "سجل تجربة أو تمرين."
+      },
+      {
+        "q": "تحليل نتائج التمارين والحوادث وتحديث الخطة وإبلاغ العاملين",
+        "hint": "إجراءات تصحيحية ومراجعة موثقة."
+      }
+    ]
+  },
+  {
+    "title": "الإبلاغ عن الحوادث والتحقيق",
+    "max": 5,
+    "desc": "التأكد من إجراء البلاغات والنماذج وآلية الإغلاق",
+    "items": [
+      {
+        "q": "وجود إجراء معتمد للإبلاغ عن الحوادث والتحقيق فيها",
+        "hint": "نسخة موقعة بتاريخ أو اعتماد."
+      },
+      {
+        "q": "تحديد ما يجب الإبلاغ عنه: إصابة، حادث، شبه حادث وخطر",
+        "hint": "تعريفات ومعايير واضحة."
+      },
+      {
+        "q": "تحديد قنوات الإبلاغ والمسؤولين والتسلسل الزمني وفق المتطلبات المنطبقة",
+        "hint": "شفهي، إلكتروني، نموذج موحد، مسار تصعيد."
+      },
+      {
+        "q": "تحديد آلية الاستجابة الفورية وتأمين الموقع وحماية الأدلة",
+        "hint": "تصرفات ما بعد الحادث."
+      },
+      {
+        "q": "توفير نموذج إبلاغ فعلي يتضمن بيانات الواقعة الأساسية",
+        "hint": "مكان، تاريخ، وقت، وصف، أطراف، إجراء فوري."
+      },
+      {
+        "q": "وجود معايير لتصنيف الوقائع ومستويات التحقيق والتبليغ الخارجي",
+        "hint": "حالات تصعيد واضحة."
+      },
+      {
+        "q": "تحديد منهجية التحقيق وجمع الأدلة وتحليل الأسباب الجذرية",
+        "hint": "لا يقتصر على لوم العامل."
+      },
+      {
+        "q": "وجود سجل للإجراءات التصحيحية والوقائية والمسؤول والموعد",
+        "hint": "متابعة حتى الإغلاق والتحقق من الفاعلية."
+      },
+      {
+        "q": "آلية مشاركة الدروس المستفادة والتوعية لمنع التكرار",
+        "hint": "سجلات تعميم أو TBT."
+      },
+      {
+        "q": "وجود أدلة تطبيق أو سجلات وتقارير سابقة إن توفرت",
+        "hint": "قد يكون إثباتًا بتجربة أو سجل عدم حوادث معتمد."
+      }
+    ]
+  },
+  {
+    "title": "إحصائيات إصابات العمل",
+    "max": 5,
+    "desc": "التحقق من البيانات الرسمية والتغطية الزمنية واتساقها",
+    "items": [
+      {
+        "q": "تقديم إحصائيات إصابات العمل عن السنوات الثلاث المطلوبة",
+        "hint": "مستندات رسمية أو قابلة للتحقق."
+      },
+      {
+        "q": "ذكر اسم المنشأة أو رقمها في الإحصائيات بوضوح",
+        "hint": "يمكن ربط المستند بمقدم الطلب."
+      },
+      {
+        "q": "تمييز كل سنة وفترتها الزمنية وعدم ترك فجوات بلا تفسير",
+        "hint": "ثلاث فترات منفصلة."
+      },
+      {
+        "q": "التحقق من بيانات التأمينات الاجتماعية المطلوبة حسب نموذج التأهيل",
+        "hint": "تغطية السعوديين وغير السعوديين متى كانت مطلوبة."
+      },
+      {
+        "q": "وجود بيانات إصابات أو حوادث عمل موثقة أو بيان صفري رسمي",
+        "hint": "الصفر مدعوم وليس مجرد خانة فارغة."
+      },
+      {
+        "q": "توافق أعداد العاملين المعلنة مع وضع المنشأة أو وجود تفسير للتباين",
+        "hint": "خصوصًا الإحصائيات الصفرية مع وجود موظفين بالملف."
+      },
+      {
+        "q": "وضوح الجهة المصدرة وتاريخ استخراج الإحصائيات",
+        "hint": "مصدر موثوق أو ختم/تحقق."
+      },
+      {
+        "q": "توثيق أي اختلافات أو حالات استثنائية بمرفقات وتوضيحات",
+        "hint": "لا تعتمد افتراضات غير مفسرة."
+      },
+      {
+        "q": "تطابق البيانات مع أي مستندات إصابات أو تقارير مرفقة أخرى",
+        "hint": "عدم وجود تناقض جوهري."
+      }
+    ]
+  }
+];
+// قالب البنود الاثني عشر ثابت الأوزان، أما المؤشرات فيمكن تحريرها وحذفها وإضافتها.
+function cloneDefaults(){return DEFAULT_SECTIONS.map((s,i)=>({...s,items:s.items.map((item,j)=>({...item,id:`s${i}q${j}`}))}));}
+let SECTIONS=cloneDefaults();
+const STORAGE_KEY='qualification-12x100-v4-editable';
+const PREVIOUS_STORAGE_KEY='qualification-12x100-v3';
+const LEGACY_STORAGE_KEY='qualification-12x100-v2';
+const stateLabels={yes:'مستوفٍ',partial:'مستوفٍ جزئيًا',no:'غير مستوفٍ'};
+const answersValue={yes:1,partial:.5,no:0};
+let storageOk=true, db, slide=0, editingMode=false, lastDeleted=null;
+const el=id=>document.getElementById(id);
+const escapeHTML=value=>String(value??'').replace(/[&<>"']/g,s=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[s]));
+const fmt=num=>Number(num.toFixed(2)).toLocaleString('ar-SA',{maximumFractionDigits:2});
+const pad=x=>String(x).padStart(2,'0');
+const localDate=()=>{const d=new Date();return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;};
+const makeId=()=>`${Date.now()}-${Math.random().toString(36).slice(2,10)}`;
+const createRecord=()=>({id:makeId(),schemaVersion:4,contractorNumber:'',auditor:'',date:localDate(),answers:{},criterionNotes:{},sectionNotes:{}});
+function validTemplate(template){
+ if(!Array.isArray(template)||template.length!==12)return null;
+ const defs=cloneDefaults();
+ try{return defs.map((base,i)=>{
+  const raw=template[i];if(!raw||!Array.isArray(raw.items)||!raw.items.length||raw.items.length>200)throw Error('template');
+  const seen=new Set();
+  const items=raw.items.map((item,j)=>{
+   let id=typeof item.id==='string'&&item.id.length<100?item.id:`import${i}_${j}`;
+   if(seen.has(id))id=`import${i}_${j}`;seen.add(id);
+   return {id,q:String(item.q||'مؤشر جديد').slice(0,800),hint:String(item.hint||'').slice(0,1200)};
+  });
+  return {...base,items};
+ });}catch(e){return null;}
+}
+// معرّف ثابت لكل مؤشر؛ حتى بعد حذف مؤشر لا تنتقل إجابته إلى السؤال الذي يليه.
+function normalizeRecord(record){
+ const r=record&&typeof record==='object'?record:{};
+ const legacy=Number(r.schemaVersion||2)<3;
+ const keepOldIndexes=[0,1,2,3,4,8];
+ const convertKey=(key)=>{
+  if(!/^\d+_\d+$/.test(key))return key; // ملفات النسخة الحالية تستعمل معرّفات ثابتة.
+  const [i,j]=key.split('_').map(Number);
+  if(i>=12)return null;
+  const mapped=i===0&&legacy?keepOldIndexes.indexOf(j):j;
+  if(mapped<0)return null;
+  return `s${i}q${mapped}`;
+ };
+ const transform=(data)=>{const out={};for(const [key,val] of Object.entries(data||{})){const k=convertKey(key);if(k)out[k]=val;}return out;};
+ const {company, ...fields}=r; // اسم المقاول لا يُطلب ولا يُحفظ في النسخة الحالية.
+ return {...fields,id:r.id||makeId(),schemaVersion:4,contractorNumber:r.contractorNumber||'',auditor:r.auditor||'',date:r.date||localDate(),answers:transform(r.answers),criterionNotes:transform(r.criterionNotes),sectionNotes:{...(r.sectionNotes||{})}};
+}
+function init(){
+ try{const probe='__qualifier_probe__';localStorage.setItem(probe,'ok');localStorage.removeItem(probe);}catch(e){storageOk=false;}
+ try{
+  const cached=storageOk?(JSON.parse(localStorage.getItem(STORAGE_KEY)||'null')||JSON.parse(localStorage.getItem(PREVIOUS_STORAGE_KEY)||'null')||JSON.parse(localStorage.getItem(LEGACY_STORAGE_KEY)||'null')):null;
+  if(cached?.records?.length && Array.isArray(cached.records)){
+   SECTIONS=validTemplate(cached.sections)||cloneDefaults();
+   db={...cached,version:4,sections:SECTIONS,records:cached.records.map(normalizeRecord)};
+  }
+ }catch(e){}
+ if(!db){const record=createRecord();db={version:4,currentId:record.id,activeSlide:0,sections:SECTIONS,records:[record]};}
+ if(!db.records.some(r=>r.id===db.currentId)){db.currentId=db.records[0].id;}
+ slide=Math.min(12,Math.max(0,Number(db.activeSlide)||0));
+ document.body.addEventListener('click',onClick);
+ document.body.addEventListener('input',onInput);
+ document.body.addEventListener('change',onChange);
+ el('import-file').addEventListener('change',importFile);
+ if(!storageOk)el('storage-message').innerHTML='<strong>تنبيه:</strong> المتصفح لا يسمح بالحفظ المحلي لهذه الصفحة. استخدم زر «حفظ نسخة احتياطية» بعد كل تعديل مهم.';
+ renderAll();
+}
+function current(){return db.records.find(r=>r.id===db.currentId)||db.records[0];}
+function save(){
+ db.activeSlide=slide;db.sections=SECTIONS;db.version=4;
+ try{if(storageOk){localStorage.setItem(STORAGE_KEY,JSON.stringify(db));el('save-badge').textContent='حُفظ تلقائيًا على هذا الجهاز';}}
+ catch(e){storageOk=false;el('save-badge').textContent='الحفظ المحلي غير متاح';el('storage-message').textContent='تعذّر الحفظ المحلي. نزّل نسخة احتياطية لحفظ عملك.';}
+}
+function answerKey(i,j){return SECTIONS[i].items[j].id;}
+function calcSection(i,rec=current()){
+ const sec=SECTIONS[i],n=sec.items.length,unit=n?sec.max/n:0;
+ let earned=0,answered=0,yes=0,partial=0,no=0;
+ sec.items.forEach((item,j)=>{const v=rec.answers?.[answerKey(i,j)];if(v in answersValue){answered++;earned+=unit*answersValue[v];if(v==='yes')yes++;if(v==='partial')partial++;if(v==='no')no++;}});
+ return {max:sec.max,earned,answered,n,yes,partial,no,pending:n-answered,complete:n>0&&answered===n,reviewedMax:answered*unit};
+}
+function calcAll(rec=current()){
+ let earned=0,reviewedMax=0,answered=0,n=0,finished=0,missing=0,partial=0;
+ const rows=SECTIONS.map((_,i)=>{const x=calcSection(i,rec);earned+=x.earned;reviewedMax+=x.reviewedMax;answered+=x.answered;n+=x.n;finished+=Number(x.complete);missing+=x.no;partial+=x.partial;return x;});
+ return {earned,reviewedMax,answered,n,finished,missing,partial,complete:finished===12,rows};
+}
+function renderAll(){
+ const rec=current();
+ ['contractorNumber','auditor'].forEach(key=>{el(key).value=rec[key]||'';});el('audit-date').value=rec.date||localDate();
+ renderNav();renderSlide();save();
+}
+function renderNav(){
+ const rec=current();let out='';
+ SECTIONS.forEach((sec,i)=>{const x=calcSection(i,rec);out+=`<button type="button" class="nav-item ${i===slide?'active':''}" data-action="nav" data-index="${i}" ${i===slide?'aria-current="step"':''}><span class="nav-num">${pad(i+1)}</span><span class="nav-copy"><span class="nav-name">${escapeHTML(sec.title)}</span><span class="nav-sub">${x.complete?`${fmt(x.earned)} / ${sec.max} درجة`:`${x.answered} من ${x.n} نقاط`}</span></span>${x.complete?'<span class="nav-tick" aria-label="مكتمل">✓</span>':''}</button>`;});
+ const all=calcAll(rec);out+=`<button type="button" class="nav-item ${slide===12?'active':''}" data-action="nav" data-index="12"><span class="nav-num">13</span><span class="nav-copy"><span class="nav-name">النتيجة النهائية</span><span class="nav-sub">${all.finished} من 12 بندًا مكتملًا</span></span></button>`;
+ el('nav-list').innerHTML=out;
+}
+function renderSlide(){if(slide===12){renderSummary();return;}
+ const i=slide,sec=SECTIONS[i],rec=current(),s=calcSection(i),pct=s.n?100*s.answered/s.n:0;
+ let content=`<section class="slide" data-page="${i+1}"><div class="slide-top"><div><div class="slide-kicker">الاستبيان ${pad(i+1)} من 12 · وزن البند ${sec.max} من 100</div><h2>${escapeHTML(sec.title)}</h2><p class="slide-desc">${escapeHTML(sec.desc)}</p></div><div class="scorebox"><div><div class="scorecaption">${s.complete?'الدرجة النهائية للبند':'الدرجة المكتسبة حتى الآن (مؤقتة)'}</div><div class="big">${fmt(s.earned)} / ${sec.max}</div></div><div class="scorecaption">${s.complete?`استيفاء ${fmt(100*s.earned/sec.max)}%`:`${s.answered} من ${s.n} مقيمة`}</div></div></div>`;
+ content+=`<div class="progress-track" role="progressbar" aria-label="نسبة الأسئلة المقيمة" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${Math.round(pct)}"><div class="progress-fill" style="width:${pct}%"></div></div><div class="mini-stats"><span>المُقيّم: <strong>${s.answered}/${s.n}</strong></span><span>المستوفي: <strong>${s.yes}</strong></span><span>الجزئي: <strong>${s.partial}</strong></span><span>غير المستوفي: <strong>${s.no}</strong></span><span>المتبقي: <strong>${s.pending}</strong></span></div>`;
+ content+=`<div class="editor-bar"><div><strong>مؤشرات البند (${s.n}) — قابلة للتعديل مباشرة</strong><div class="editor-sub">يمكنك الضغط على نص أي مؤشر وتعديله أو حذفه. وزن البند ثابت: ${sec.max} درجات، وتتوزع حصة المؤشر تلقائيًا بعد الحذف أو الإضافة.</div></div></div>`;
+ content+='<div class="info">اضغط على خانة «نص المؤشر» لتغيير صياغته مباشرة، ثم اختر حالة استيفائه. تظهر المؤشرات غير المستوفاة والجزئية تلقائيًا أعلى مربع البند في الصفحة 13؛ وتظهر الملاحظات المكتوبة في الجزء السفلي.</div><div class="checks">';
+ sec.items.forEach((item,j)=>{
+  const key=answerKey(i,j),v=rec.answers?.[key]||'',note=rec.criterionNotes?.[key]||'';
+  content+=`<article class="check" data-answer="${v}"><div class="check-head"><span class="check-no">${j+1}</span><div class="criterion-fields"><label class="criterion-label" for="criterion-${i}-${j}">✎ نص المؤشر (قابل للتعديل)</label><textarea id="criterion-${i}-${j}" class="criterion-text" rows="2" data-edit-field="q" data-criterion-id="${escapeHTML(item.id)}" data-section="${i}" aria-label="تعديل نص المؤشر رقم ${j+1}" placeholder="اكتب نص المؤشر هنا">${escapeHTML(item.q)}</textarea><label class="criterion-label muted-label" for="hint-${i}-${j}">دليل التحقق (قابل للتعديل)</label><textarea id="hint-${i}-${j}" class="hint-text" rows="2" data-edit-field="hint" data-criterion-id="${escapeHTML(item.id)}" data-section="${i}" aria-label="تعديل دليل التحقق للمؤشر ${j+1}" placeholder="يمكن كتابة أو تعديل دليل التحقق">${escapeHTML(item.hint)}</textarea></div></div><div class="answer-group" role="group" aria-label="تقييم الشرط ${j+1}">`;
+  for(const [value,label] of Object.entries(stateLabels))content+=`<button type="button" class="answer ${v===value?'selected':''}" data-action="answer" data-section="${i}" data-question="${j}" data-value="${value}" aria-pressed="${v===value}">${label}</button>`;
+  content+=`</div><div class="note-wrap"><input type="text" data-criterion-note="${key}" aria-label="ملاحظة إضافية للشرط ${j+1}" placeholder="ملاحظة المدقق المكتوبة (اختياري)" value="${escapeHTML(note)}" /></div>`;
+  content+=`<div class="criterion-actions"><button type="button" class="btn danger small" data-action="remove-criterion" data-section="${i}" data-criterion-id="${escapeHTML(item.id)}">حذف هذا المؤشر</button></div>`;
+  content+='</article>';
+ });
+ content+='</div>';
+ content+=`<div class="editor-actions"><button type="button" class="btn success" data-action="add-criterion" data-section="${i}">+ إضافة مؤشر جديد</button><button type="button" class="btn" data-action="undo-delete" ${lastDeleted?.section===i?'':'disabled'}>↶ استعادة آخر مؤشر محذوف</button><div class="editor-sub">التعديل والحذف والإضافة يعمل على كل صفحات الاستبيانات. وزن كل بند ثابت ومجموع الأوزان 100 درجة.</div></div>`;
+ content+=`<div class="section-free"><label for="section-notes">ملاحظات إضافية عامة على ${escapeHTML(sec.title)}</label><textarea id="section-notes" data-section-note="${i}" placeholder="تظهر الملاحظة المكتوبة في الجزء السفلي من مربع هذا البند بالصفحة 13">${escapeHTML(rec.sectionNotes?.[i]||'')}</textarea></div>${navButtons()}</section>`;
+ el('main-content').innerHTML=content;
+}
+function navButtons(){return `<div class="slide-actions"><button type="button" class="btn" data-action="prev" ${slide===0?'disabled':''}>السابق</button><span class="spacer"></span>${slide<12?`<button type="button" class="btn primary" data-action="next">${slide===11?'عرض النتيجة النهائية':'التالي ←'}</button>`:''}</div>`;}
+// الصفحة 13: حالة النقص والجزئي تُعرض تلقائيًا، والملاحظات المكتوبة فقط في الجزء السفلي.
+function groupFindings(rec=current()){
+ return SECTIONS.map((sec,i)=>{
+  const missing=[],partial=[],manual=[];
+  sec.items.forEach((item,j)=>{
+   const key=answerKey(i,j),status=rec.answers?.[key];
+   const title=String(item.q||'').trim();
+   // لا نظهر المؤشرات المستوفاة في الجزء الآلي مطلقًا.
+   if(status==='no')missing.push(title);
+   if(status==='partial')partial.push(title);
+   const note=String(rec.criterionNotes?.[key]||'').trim();
+   // الملاحظات اليدوية منفصلة عن الحالات الآلية، حتى لو كان المؤشر مستوفيًا.
+   if(note)manual.push({label:`مؤشر ${j+1}`,text:note});
+  });
+  const general=String(rec.sectionNotes?.[i]||'').trim();
+  if(general)manual.push({label:'ملاحظة عامة',text:general});
+  return {section:i,title:sec.title,missing,partial,manual};
+ });
+}
+function statusLines(items, status){
+ return items.map(x=>`<div class="status-row is-${status}"><span class="status-marker">${status==='no'?'غير مستوفٍ':'مستوفٍ جزئيًا'}</span><span class="status-text">${escapeHTML(x)}</span></div>`).join('');
+}
+function renderSummary(){
+ const rec=current(),all=calcAll(rec),groups=groupFindings(rec),pct=all.reviewedMax?100*all.earned/all.reviewedMax:0;
+ let html=`<section class="slide is-summary" data-page="13"><div class="print-header"><h2>تقرير تدقيق متطلبات تأهيل المقاولين</h2><div>رقم المقاول: ${escapeHTML(rec.contractorNumber||'—')} · المدقق: ${escapeHTML(rec.auditor||'—')} · التاريخ: ${escapeHTML(rec.date||'—')}</div></div>`;
+ html+=`<div class="slide-top"><div><div class="slide-kicker">الصفحة 13 · لوحة تجميع تلقائي</div><h2>النتيجة النهائية والملاحظات</h2><p class="slide-desc">رقم المقاول: ${escapeHTML(rec.contractorNumber||'لم يُدخل')} · ${escapeHTML(rec.date||'تاريخ غير محدد')}</p></div><span class="tag">${all.complete?'جميع الاستبيانات مكتملة':'النتيجة مؤقتة حتى اكتمال الاستبيانات'}</span></div>`;
+ html+=`<div class="summary-cards"><div class="summary-card primarysum ${all.complete?'good':'warn'}"><div class="caption">${all.complete?'النتيجة النهائية / 100':'درجات مكتسبة حتى الآن / 100'}</div><div class="value">${fmt(all.earned)} / 100</div><small>${all.complete?'نتيجة نهائية محسوبة من 12 بندًا':'مؤقتة: البنود غير المقيمة لا تُعتبر غير مستوفاة'}</small></div><div class="summary-card"><div class="caption">${all.complete?'نسبة الاستيفاء النهائية':'نسبة استيفاء الأسئلة التي قُيّمت'}</div><div class="value">${fmt(all.complete?all.earned:pct)}%</div><small>${all.complete?'من إجمالي الدرجة':'لا تشمل الأسئلة التي لم تُقيّم'}</small></div><div class="summary-card"><div class="caption">إنجاز التقييم</div><div class="value">${all.finished} / 12</div><small>${all.answered} من ${all.n} شرطًا · ${all.missing} غير مستوفٍ · ${all.partial} جزئي</small></div></div>`;
+ if(!all.complete){html+='<div class="pending-box"><strong>لا تزال النتيجة النهائية غير مكتملة.</strong> تُعرض الدرجات المكتسبة والنسبة للأسئلة التي جرى تقييمها فقط؛ اكتمال جميع الأسئلة شرط لإظهار نتيجة نهائية صحيحة من 100.</div>';}
+ html+=`<h3 class="sum-title">ملخص درجات البنود الاثني عشر</h3><div class="table-scroll"><table class="score-table"><thead><tr><th>#</th><th>بند التأهيل</th><th>الدرجة</th><th>الوزن</th><th>الاستيفاء</th><th>حالة التقييم</th></tr></thead><tbody>`;
+ all.rows.forEach((s,i)=>{html+=`<tr><td>${i+1}</td><td>${escapeHTML(SECTIONS[i].title)}</td><td>${s.answered?fmt(s.earned):'—'}</td><td>${s.max}</td><td>${s.complete?`${fmt(100*s.earned/s.max)}%`:'مؤقت'}</td><td><span class="pill ${s.complete?'done':'pending'}">${s.complete?'مكتمل':`${s.answered} / ${s.n} سؤال`}</span></td></tr>`;});
+ html+=`</tbody><tfoot><tr><td colspan="2">المجموع</td><td>${fmt(all.earned)}</td><td>100</td><td>${all.complete?`${fmt(all.earned)}%`:'غير مكتمل'}</td><td>${all.finished} / 12 مكتمل</td></tr></tfoot></table></div>`;
+ const notedGroups=groups.filter(g=>g.missing.length||g.partial.length||g.manual.length).length;
+ html+=`<h3 class="sum-title">ملخص الاستيفاء والملاحظات حسب المتطلب <span class="pill">${notedGroups} من 12 بندًا بها نقص أو ملاحظة</span></h3><div class="findings">`;
+ groups.forEach(g=>{
+  const issues=statusLines(g.missing,'no')+statusLines(g.partial,'partial');
+  const count=g.missing.length+g.partial.length;
+  // مربع واحد لكل بند، مقسم إلى جزأين بخط فاصل واضح.
+  html+=`<article class="finding dual-summary" data-summary-section="${g.section}">`;
+  html+=`<div class="finding-header"><strong>${g.section+1}. ${escapeHTML(g.title)}</strong><span class="report-count">${count} مؤشر غير/جزئي · ${g.manual.length} ملاحظات مكتوبة</span></div>`;
+  html+=`<div class="report-half automatic-half"><h4>حالات عدم الاستيفاء والاستيفاء الجزئي (تلقائيًا)</h4>`;
+  html+=issues||'<p class="empty-line">لا توجد مؤشرات غير مستوفاة أو مستوفاة جزئيًا.</p>';
+  html+='</div>';
+  html+='<div class="report-half notes-half"><h4>ملاحظات المدقق المكتوبة</h4>';
+  html+=g.manual.length?g.manual.map(m=>`<p class="manual-note"><strong>${escapeHTML(m.label)}:</strong> ${escapeHTML(m.text)}</p>`).join(''):'<p class="empty-line">لم تُدوّن ملاحظات إضافية.</p>';
+  html+='</div></article>';
+ });
+ html+='</div>';
+ const pending=all.rows.map((s,i)=>({i,pending:s.pending})).filter(x=>x.pending);
+ if(pending.length){html+='<h3 class="sum-title">البنود التي لم يكتمل تدقيقها</h3><div class="pending-box">';pending.forEach(x=>{html+=`<p>• ${escapeHTML(SECTIONS[x.i].title)}: ${x.pending} شرط لم يُقيّم.</p>`;});html+='</div>';}
+ html+=`<div class="info">طريقة احتساب الدرجة: الدرجة الإجمالية لكل بند ثابتة حتى بعد حذف أو إضافة المؤشرات، وتُوزع بالتساوي على مؤشرات البند الحالية. «مستوفٍ» يمنح كامل حصة السؤال، «مستوفٍ جزئيًا» نصفها، «غير مستوفٍ» صفرًا. الجزء العلوي يعرض غير المستوفي والمستوفي جزئيًا فقط؛ الجزء السفلي يعرض ملاحظات المدقق المكتوبة فقط. المستوفي لا يظهر في القسم الآلي.</div>`;
+ html+=`<div class="slide-actions print-hide"><button type="button" class="btn" data-action="prev">السابق</button><div class="spacer"></div><button type="button" class="btn" data-action="copy">نسخ الملخص</button><button type="button" class="btn primary" data-action="print">طباعة / حفظ PDF</button></div></section>`;
+ el('main-content').innerHTML=html;
+}
+function gotoSlide(to){slide=Math.max(0,Math.min(12,to));renderNav();renderSlide();save();window.scrollTo({top:0,behavior:'instant'});}
+function onClick(e){
+ const b=e.target.closest('button[data-action]');if(!b)return;
+ const a=b.dataset.action;
+ if(a==='nav')return gotoSlide(Number(b.dataset.index));
+ if(a==='prev')return gotoSlide(slide-1);
+ if(a==='next')return gotoSlide(slide+1);
+ if(a==='toggle-edit'){editingMode=!editingMode;renderSlide();return;}
+ if(a==='add-criterion'){
+  const i=Number(b.dataset.section),newItem={id:`custom_${makeId()}`,q:'مؤشر جديد — عدّل النص هنا',hint:''};
+  SECTIONS[i].items.push(newItem);renderNav();renderSlide();save();
+  const input=Array.from(document.querySelectorAll('[data-edit-field="q"]')).find(n=>n.dataset.criterionId===newItem.id);
+  if(input){input.focus();input.select();}return;
+ }
+ if(a==='remove-criterion'){
+  const i=Number(b.dataset.section),id=b.dataset.criterionId,items=SECTIONS[i].items;
+  const j=items.findIndex(x=>x.id===id);if(j<0)return;
+  if(items.length===1){alert('يجب بقاء مؤشر واحد على الأقل في البند لضمان احتساب درجته.');return;}
+  if(!confirm(`حذف المؤشر رقم ${j+1} من «${SECTIONS[i].title}»؟\nسيُعاد توزيع وزن البند (${SECTIONS[i].max} درجات) على المؤشرات المتبقية تلقائيًا.`))return;
+  const item=items.splice(j,1)[0],perRecord={};
+  db.records.forEach(r=>{perRecord[r.id]={answer:r.answers[id],note:r.criterionNotes[id]};delete r.answers[id];delete r.criterionNotes[id];});
+  lastDeleted={section:i,index:j,item,perRecord};
+  renderNav();renderSlide();save();return;
+ }
+ if(a==='undo-delete'){
+  if(!lastDeleted||lastDeleted.section!==slide)return;
+  const d=lastDeleted;SECTIONS[d.section].items.splice(d.index,0,d.item);
+  db.records.forEach(r=>{const restored=d.perRecord[r.id];if(restored?.answer!==undefined)r.answers[d.item.id]=restored.answer;if(restored?.note!==undefined)r.criterionNotes[d.item.id]=restored.note;});
+  lastDeleted=null;renderNav();renderSlide();save();return;
+ }
+ if(a==='answer'){
+  const rec=current(),i=Number(b.dataset.section),j=Number(b.dataset.question),key=answerKey(i,j),value=b.dataset.value;
+  if(rec.answers[key]===value)delete rec.answers[key];else rec.answers[key]=value;
+  renderNav();renderSlide();save();return;
+ }
+ if(a==='new'){
+  if(!confirm('هل تريد إنشاء تقييم جديد لمقاول آخر؟ ستبقى التقييمات السابقة محفوظة على هذا الجهاز.'))return;
+  const r=createRecord();db.records.push(r);db.currentId=r.id;slide=0;renderAll();return;
+ }
+ if(a==='choose'){
+  const names=db.records.map((r,i)=>`${i+1}. مقاول رقم ${r.contractorNumber||'غير محدد'} — ${r.date||''}`).join('\n');
+  const s=prompt(`اختر رقم التقييم للانتقال إليه:\n${names}\n\nأدخل الرقم:`,String(db.records.findIndex(r=>r.id===db.currentId)+1));
+  if(s===null)return;const idx=Number(s)-1;if(Number.isInteger(idx)&&idx>=0&&idx<db.records.length){db.currentId=db.records[idx].id;slide=0;renderAll();}else alert('رقم التقييم غير صحيح.');return;
+ }
+ if(a==='reset'){
+  if(!confirm('سيتم حذف إجابات وملاحظات المقاول الحالي فقط. هل أنت متأكد؟'))return;
+  const r=current();r.answers={};r.criterionNotes={};r.sectionNotes={};slide=0;renderAll();return;
+ }
+ if(a==='json')return exportJSON();
+ if(a==='csv')return exportCSV();
+ if(a==='import')return el('import-file').click();
+ if(a==='print'){gotoSlide(12);setTimeout(()=>window.print(),160);return;}
+ if(a==='copy')return copySummary();
+}
+function onInput(e){
+ const r=current(),t=e.target;
+ if(t.dataset.editField){
+  const i=Number(t.dataset.section),item=SECTIONS[i]?.items.find(x=>x.id===t.dataset.criterionId);
+  if(item&&['q','hint'].includes(t.dataset.editField)){item[t.dataset.editField]=t.value;save();}
+  return;
+ }
+ if(['contractorNumber','auditor','audit-date'].includes(t.id)){r[t.id==='audit-date'?'date':t.id]=t.value;save();return;}
+ if(t.dataset.criterionNote){r.criterionNotes[t.dataset.criterionNote]=t.value;save();return;}
+ if(t.dataset.sectionNote!==undefined){r.sectionNotes[t.dataset.sectionNote]=t.value;save();return;}
+}
+function onChange(e){
+ if(e.target.id==='audit-date'){current().date=e.target.value;save();}
+ if(e.target.dataset.editField){const i=Number(e.target.dataset.section),item=SECTIONS[i]?.items.find(x=>x.id===e.target.dataset.criterionId);if(item&&!item.q.trim()){item.q='مؤشر جديد — عدّل النص هنا';e.target.value=item.q;}save();}
+}
+function safeName(){return ('مقاول_'+(current().contractorNumber||'جديد')).replace(/[\\/:*?"<>|\r\n]+/g,'_').trim().slice(0,45)||'مقاول_جديد';}
+function download(name,contents,mime){const blob=new Blob([contents],{type:mime});const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();setTimeout(()=>{URL.revokeObjectURL(url);a.remove();},2500);}
+function exportJSON(){
+ const r=current();const backup={app:'تدقيق تأهيل المقاولين - نسخة قابلة للتحرير',version:4,sections:SECTIONS,records:db.records,currentId:db.currentId,activeSlide:slide};
+ download(`نسخة_احتياطية_كاملة_${safeName()}_${r.date||'بدون_تاريخ'}.json`,JSON.stringify(backup,null,2),'application/json;charset=utf-8');
+ el('storage-message').textContent='تم تجهيز نسخة احتياطية تشمل المؤشرات المعدّلة وجميع المقاولين ودرجاتهم. يمكنك نقلها إلى جهاز آخر.';
+}
+function exportCSV(){
+ const r=current(),rows=[['رقم المقاول','المدقق','التاريخ','رقم البند','البند','وزن البند','رقم الشرط','معرّف المؤشر','سؤال التدقيق','دليل التحقق','الحالة','نقاط السؤال المكتسبة','نقاط السؤال الكاملة','ملاحظة المدقق']];
+ SECTIONS.forEach((sec,i)=>sec.items.forEach((item,j)=>{const key=answerKey(i,j),v=r.answers[key],unit=sec.max/sec.items.length;rows.push([r.contractorNumber,r.auditor,r.date,i+1,sec.title,sec.max,j+1,item.id,item.q,item.hint,stateLabels[v]||'لم يُقيّم',v in answersValue?(unit*answersValue[v]).toFixed(3):'',unit.toFixed(3),r.criterionNotes[key]||'']);}));
+ rows.push([]);rows.push(['ملاحظات عامة للبنود']);SECTIONS.forEach((s,i)=>{if(r.sectionNotes[i])rows.push([s.title,r.sectionNotes[i]]);});
+ const csv='\ufeff'+rows.map(row=>row.map(v=>`"${String(v??'').replace(/"/g,'""')}"`).join(',')).join('\r\n');download(`تفاصيل_تقييم_${safeName()}.csv`,csv,'text/csv;charset=utf-8');
+}
+async function importFile(e){
+ const f=e.target.files?.[0];if(!f)return;
+ try{
+  const raw=JSON.parse(await f.text());
+  if(raw?.version===4&&Array.isArray(raw.records)&&raw.records.length&&validTemplate(raw.sections)){
+   if(!confirm('استيراد النسخة الكاملة؟ سيُستبدل سجل المقاولين والمؤشرات الحالية بالنسخة المستوردة. احتفظ بنسخة احتياطية أولًا.'))return;
+   SECTIONS=validTemplate(raw.sections);db={version:4,sections:SECTIONS,records:raw.records.map(normalizeRecord),currentId:raw.currentId,activeSlide:0};
+   if(!db.records.some(r=>r.id===db.currentId))db.currentId=db.records[0].id;
+   slide=0;lastDeleted=null;renderAll();alert('تم استيراد المؤشرات ونتائج المقاولين بنجاح.');return;
+  }
+  // السماح باستيراد نسخ تقييم المقاول الواحد من الإصدارات السابقة.
+  const r=raw?.record;
+  if(!r||typeof r!=='object'||!r.answers)throw Error('تنسيق النسخة الاحتياطية غير صحيح.');
+  if(!confirm(`استيراد تقييم المقاول رقم «${r.contractorNumber||'غير محدد'}» وإضافته كتقييم جديد؟`))return;
+  const clone={...normalizeRecord(r),id:makeId()};db.records.push(clone);db.currentId=clone.id;
+  slide=0;renderAll();alert('اكتمل استيراد تقييم المقاول.');
+ }catch(err){alert(`تعذر الاستيراد: ${err.message}`);}finally{e.target.value='';}
+}
+function plainSummary(){
+ const r=current(),all=calcAll(r),groups=groupFindings(r);
+ let parts=[`تقرير تدقيق متطلبات تأهيل المقاولين`,`رقم المقاول: ${r.contractorNumber||'—'} | المدقق: ${r.auditor||'—'} | التاريخ: ${r.date||'—'}`,`${all.complete?'النتيجة النهائية':'الدرجات المكتسبة مؤقتًا'}: ${fmt(all.earned)} / 100`,`البنود المكتملة: ${all.finished} / 12`,``, 'الدرجات:'];
+ all.rows.forEach((s,i)=>parts.push(`${i+1}. ${SECTIONS[i].title}: ${s.answered?fmt(s.earned):'—'} / ${s.max}${s.complete?'':' (غير مكتمل)'}`));
+ parts.push('', 'ملخص البنود:');
+ groups.forEach(g=>{
+  parts.push(`${g.section+1}. ${g.title}`,'أولًا: الحالات غير المستوفاة والمستوفاة جزئيًا');
+  if(!g.missing.length&&!g.partial.length)parts.push('لا يوجد');
+  g.missing.forEach(v=>parts.push(`غير مستوفٍ: ${v}`));
+  g.partial.forEach(v=>parts.push(`مستوفٍ جزئيًا: ${v}`));
+  parts.push('ثانيًا: ملاحظات المدقق المكتوبة');
+  if(!g.manual.length)parts.push('لا توجد ملاحظات');
+  g.manual.forEach(v=>parts.push(`${v.label}: ${v.text}`));
+  parts.push('');
+ });
+ return parts.join('\n');
+}
+async function copySummary(){try{await navigator.clipboard.writeText(plainSummary());alert('تم نسخ ملخص النتيجة والملاحظات.');}catch(e){const input=document.createElement('textarea');input.value=plainSummary();document.body.append(input);input.select();try{document.execCommand('copy');alert('تم نسخ الملخص.');}catch(err){alert('تعذّر النسخ في هذا المتصفح. استخدم الطباعة أو التصدير.');}input.remove();}}
+init();
+</script>
+</body></html>
