@@ -111,22 +111,19 @@ const DEFAULT_SECTIONS = [
         "hint": "مثل دورات السلامة المرتبطة بالأعمال، حسب المتطلبات."
       },
       {
-        "q": "تحديد صلاحيات ممثلي السلامة وإجراءات الإبلاغ والتصعيد",
-        "hint": "توصيف وظيفي وحق رفع المخاطر."
+        "q": "توفر قائمة محدثة توضح أعداد العاملين في الموقع ومسمياتهم الوظيفية، بما في ذلك ممثلو السلامة والصحة المهنية، مع تحديد عدد ممثلي السلامة بشكل واضح",
+        "hint": "قائمة العاملين بمسمياتهم الوظيفية، مع تحديد العدد الإجمالي وعدد ممثلي السلامة."
       },
       {
-        "q": "كفاية عدد ممثلي السلامة لتغطية المواقع والورديات ونطاق الأعمال",
-        "hint": "خطة توزيع وتغطية فعلية."
+        "q": "التحقق من توافق عدد ممثلي السلامة والصحة المهنية مع إجمالي عدد العاملين لدى المقاول، وفقًا لمتطلبات وزارة الموارد البشرية والتنمية الاجتماعية، بواقع ممثل سلامة واحد لكل خمسين عاملًا",
+        "hint": "مطابقة عدد ممثلي السلامة لإجمالي العاملين وفق النسبة المحددة، مع مستندات تؤيد الأعداد."
       },
       {
-        "q": "اتساق أسماء ومسميات ممثلي السلامة في الهيكل وقائمة الممثلين مع قرارات التكليف والسير الذاتية المقدمة",
-        "hint": "التحقق من تطابق بيانات الممثلين وتكليفاتهم دون ازدواجية أو تناقض في المستندات."
+        "q": "توفر عضوية سارية لدى الهيئة السعودية للمهندسين لممثلي السلامة والصحة المهنية، لمزاولة المهنة بتخصص السلامة والصحة المهنية",
+        "hint": "عضوية سارية لدى الهيئة السعودية للمهندسين لكل ممثل سلامة، مع ظهور التخصص المهني."
       },
       {
-        "q": "وجود خطة بديل عند الغياب مع استمرارية متابعة السلامة",
-        "hint": "ضمان عدم ترك الموقع بلا تغطية."
-      },
-      {
+        "id": "s1q10",
         "q": "إمكانية التحقق من بيانات الشهادات وصحة المستندات",
         "hint": "أرقام شهادات أو روابط تحقق إن توفرت."
       }
@@ -200,71 +197,71 @@ const DEFAULT_SECTIONS = [
     ]
   },
   {
-    "title": "لائحة وتعليمات السلامة",
-    "max": 15,
-    "desc": "مراجعة لائحة معتمدة ومناسبة لأنشطة المقاول",
-    "items": [
-      {
-        "q": "تقديم لائحة أو دليل سلامة مكتوب خاص بالمنشأة",
-        "hint": "مستند كامل وليس صفحة عناوين."
-      },
-      {
-        "q": "اعتماد اللائحة وتوقيعها من الجهة المخوّلة وتوثيق إصدارها",
-        "hint": "رقم نسخة وتاريخ سريان أو اعتماد."
-      },
-      {
-        "q": "تحديد نطاق انطباق اللائحة على العمال والمقاولين من الباطن والزوار",
-        "hint": "حدود المسؤولية واضحة."
-      },
-      {
-        "q": "تحديد أدوار الإدارة والمشرفين والعمال وممثلي السلامة",
-        "hint": "مسؤوليات قابلة للتنفيذ."
-      },
-      {
-        "q": "تضمين آلية تحديد الأخطار وتقييم المخاطر والسيطرة عليها",
-        "hint": "إحالة واضحة للإجراء التفصيلي."
-      },
-      {
-        "q": "تضمين المتطلبات العامة لتصاريح الأعمال عالية الخطورة",
-        "hint": "الحفريات والارتفاعات والأماكن المحصورة وغيرها وفق النشاط."
-      },
-      {
-        "q": "تضمين الاشتراطات العامة لمعدات الوقاية الشخصية واستخدامها",
-        "hint": "الاختيار، الاستخدام، والاستبدال."
-      },
-      {
-        "q": "تضمين قواعد السلامة بالمعدات والآلات والرفع والكهرباء",
-        "hint": "حسب طبيعة نطاق الأعمال."
-      },
-      {
-        "q": "تضمين ضوابط الحفريات والعمل في الطرق والحركة المرورية",
-        "hint": "عند انطباقها على النشاط."
-      },
-      {
-        "q": "تضمين تنظيم التفتيش والجولات والملاحظات والإجراءات التصحيحية",
-        "hint": "تحديد المتابعة والإغلاق."
-      },
-      {
-        "q": "تضمين تعليمات الإبلاغ عن الحوادث والوقائع الوشيكة والتحقيق",
-        "hint": "إحالة لإجراءات الحوادث."
-      },
-      {
-        "q": "تضمين أساسيات الاستعداد للطوارئ والإخلاء وطلب المساندة",
-        "hint": "إحالة لخطة الطوارئ."
-      },
-      {
-        "q": "تضمين متطلبات التأهيل والتوعية والتدريب والتعليمات للمستجدين",
-        "hint": "من يشمله التدريب ومتى."
-      },
-      {
-        "q": "تحديد أسلوب ضبط المخالفات وتصعيد المخاطر وإيقاف الأعمال غير الآمنة",
-        "hint": "صلاحيات ووسائل تصعيد."
-      },
-      {
-        "q": "وجود آلية لنشر اللائحة وتدريب العاملين عليها ومراجعتها",
-        "hint": "سجلات أو قرائن تطبيق."
-      }
-    ]
+      "title": "لائحة وتعليمات السلامة",
+      "max": 15,
+      "desc": "مؤشرات تدقيق استرشادية وفق لائحة إدارة السلامة والصحة المهنية (القرار 161238)؛ تُراعى متطلبات المستوى المنطبق بحسب نشاط المنشأة وحجمها، ولا تُعد وحدها شهادة امتثال نظامي.",
+      "items": [
+          {
+              "q": "توفر لائحة أو نظام مكتوب لإدارة السلامة والصحة المهنية يتناسب مع نشاط المنشأة وحجمها ومخاطرها",
+              "hint": "نسخة مكتوبة تغطي أنشطة المقاول ومخاطر العمل، مع تحديد المستوى النظامي المنطبق على المنشأة."
+          },
+          {
+              "q": "اعتماد لائحة السلامة والصحة المهنية من الإدارة العليا وتوثيق إصدارها ومراجعتها",
+              "hint": "توقيع الجهة المخولة، وتاريخ الاعتماد، ورقم الإصدار، وسجل المراجعات والتحديثات."
+          },
+          {
+              "q": "تضمين الالتزام بالأنظمة واللوائح السعودية للسلامة والصحة المهنية وآلية متابعة تحديثاتها",
+              "hint": "بيان المتطلبات النظامية ذات العلاقة وطريقة التحقق من الالتزام بها والتعامل مع أي تعديل."
+          },
+          {
+              "q": "تحديد نطاق تطبيق اللائحة ومسؤوليات الإدارة والمشرفين والعاملين وممثلي السلامة والموارد اللازمة",
+              "hint": "توزيع صلاحيات واضح يشمل الأطراف ذات الصلة، والمتعاقدين من الباطن والزوار حسب طبيعة العمل."
+          },
+          {
+              "q": "تضمين آلية مشاركة العاملين والتشاور معهم في قرارات السلامة والصحة المهنية",
+              "hint": "أدلة على مشاركة العاملين، ومحاضر لجنة أو فريق السلامة حيث ينطبق المستوى المتوسط أو الأعلى."
+          },
+          {
+              "q": "تضمين المراجعة الأولية وتحديد الأخطار وتقييم المخاطر وتطبيق التدابير الوقائية والرقابية",
+              "hint": "إجراء أو إحالة موثقة لتقييم المخاطر، وتحديد أولويات المعالجة وتطبيق وسائل التحكم المناسبة."
+          },
+          {
+              "q": "تضمين إجراءات التحكم في الأعمال عالية الخطورة وتصاريح العمل بحسب طبيعة النشاط",
+              "hint": "مثل الحفريات والرفع والأماكن المحصورة والكهرباء والعمل على ارتفاع والعمل في الطرق، عند انطباقها."
+          },
+          {
+              "q": "تحديد ضوابط السلامة للآلات والمعدات والأدوات ومعدات الوقاية الشخصية",
+              "hint": "الاختيار والفحص والصيانة والاستخدام والتخزين والاستبدال بما يتلاءم مع المخاطر."
+          },
+          {
+              "q": "تحديد الكفاءات واحتياجات التدريب والتوعية والتأهيل المسبق للعاملين والموظفين الجدد",
+              "hint": "إجراء أو إحالة موثقة لخطة التدريب وسجلات الحضور والمحتوى، والتدريب بلغة مفهومة."
+          },
+          {
+              "q": "تحديد أهداف السلامة والصحة المهنية ومؤشرات الأداء وخطط التنفيذ والمتابعة",
+              "hint": "أهداف مكتوبة قابلة للقياس، ومسؤوليات وموارد وجداول زمنية ومراجعة مستوى الإنجاز."
+          },
+          {
+              "q": "تحديد آليات الاتصال الداخلي والخارجي ونشر تعليمات السلامة بلغة مفهومة للعاملين",
+              "hint": "تعميم التعليمات وتوثيق قنوات التواصل، بما يشمل العاملين والمقاولين والزوار عند الحاجة."
+          },
+          {
+              "q": "تضمين الاستعداد والاستجابة للطوارئ والإخلاء والإسعافات والإنقاذ والتدريب عليها",
+              "hint": "خطة أو إحالة لخطة موثقة تحدد الأدوار والاتصالات والتجارب وطرق مراجعتها."
+          },
+          {
+              "q": "تضمين مراقبة الأداء والتفتيش والإبلاغ عن الحوادث والتحقيق فيها ومتابعة الإجراءات التصحيحية",
+              "hint": "سجلات متابعة، وتحليل الأسباب، والإبلاغ للجهات المختصة وفق المتطلبات المنطبقة."
+          },
+          {
+              "q": "وجود آلية لضبط وثائق وسجلات السلامة والصحة المهنية وحفظها وتحديثها",
+              "hint": "ترقيم واعتماد ومراجعة الوثائق، وإتاحة النسخ السارية ومنع تداول النسخ الملغاة."
+          },
+          {
+              "q": "وجود مراجعة دورية موثقة من الإدارة العليا لفاعلية إدارة السلامة والصحة المهنية والتحسين",
+              "hint": "محاضر مراجعة وقرارات ومسؤوليات متابعة وقياس فاعلية الإجراءات، بحسب المستوى النظامي المنطبق."
+          }
+      ]
   },
   {
     "title": "تقييم المخاطر",
@@ -722,6 +719,71 @@ function syncTrainingInductionTemplate(sections, database){
  }
  return sections;
 }
+// مزامنة الصياغة المعتمدة لمؤشرات ممثلي السلامة (٧ و٨ و٩) مع
+// نسخ التقييمات المحفوظة من دون تغيير أوزان البند أو مسح الإجابات السابقة.
+function syncSafetyRepresentativesTemplate(sections, database){
+ const sec=sections?.[1];
+ if(!sec?.items || database.safetyRepsWordingMigrated===true)return sections;
+ for(const j of [6,7,8]){
+  const item=sec.items.find(x=>x.id===`s1q${j}`) || sec.items[j];
+  const standard=DEFAULT_SECTIONS[1].items[j];
+  if(item && standard){item.q=standard.q;item.hint=standard.hint;}
+ }
+ database.safetyRepsWordingMigrated=true;
+ return sections;
+}
+// استبعاد مؤشر خطة البديل عند الغياب من البند الثاني دون المساس بالمؤشر التاسع
+// الخاص بعضوية الهيئة السعودية للمهندسين، ودون إعادة ترقيم معرّفات الإجابات.
+// تُطبَّق التصفية أيضًا على التقييمات القديمة المحفوظة أو المستوردة.
+function syncSafetyRepresentativeAbsenceRemoval(sections, records=[]){
+ const sec=sections?.[1]; if(!sec?.items)return sections;
+ const removed=sec.items.filter(item=>
+   String(item.id||'')==='s1q9' && /(?:بديل|بديلة|غياب)/.test(String(item.q||''))
+   || /(?:خطة|توفير).*?(?:بديل|بديلة).*?غياب/.test(String(item.q||''))
+ );
+ if(!removed.length)return sections;
+ const removedIds=new Set(removed.map(item=>item.id));
+ sec.items=sec.items.filter(item=>!removedIds.has(item.id));
+ for(const rec of records){
+   for(const id of removedIds){delete rec.answers?.[id];delete rec.criterionNotes?.[id];}
+ }
+ return sections;
+}
+// مواءمة مؤشرات اللائحة الوزارية مع البيانات المحفوظة.
+// تحفظ الإجابات القديمة في سجل أرشيفي داخل النسخة الاحتياطية، وتُطلب إعادة تقييم
+// المؤشرات المتغيرة حتى لا تنتقل درجات الأسئلة السابقة إلى اشتراطات مختلفة.
+function syncMinisterialBylawTemplate(sections, database){
+ const sec=sections?.[3], canonical=DEFAULT_SECTIONS[3];
+ if(!sec?.items || database.bylaw2026Migrated===true)return sections;
+ const changed=[];
+ for(let j=0;j<canonical.items.length;j++){
+  const target=sec.items.find(x=>x.id===`s3q${j}`) || sec.items[j];
+  const expected=canonical.items[j];
+  if(!target)continue;
+  if(target.q!==expected.q || target.hint!==expected.hint){
+   changed.push({id:target.id,previousQ:target.q,previousHint:target.hint,newQ:expected.q});
+   target.q=expected.q;target.hint=expected.hint;
+  }
+ }
+ if(changed.length){
+  const ids=new Set(changed.map(x=>x.id));
+  for(const rec of database.records||[]){
+   const answers={},notes={};
+   for(const id of ids){
+    if(Object.prototype.hasOwnProperty.call(rec.answers||{},id))answers[id]=rec.answers[id];
+    if(Object.prototype.hasOwnProperty.call(rec.criterionNotes||{},id))notes[id]=rec.criterionNotes[id];
+   }
+   if(Object.keys(answers).length || Object.keys(notes).length){
+    if(!Array.isArray(rec.legacyBylawSnapshots))rec.legacyBylawSnapshots=[];
+    rec.legacyBylawSnapshots.push({date:localDate(),reason:'تحديث مؤشرات اللائحة طبقاً للقرار 161238',previousIndicators:changed,answers,criterionNotes:notes});
+    for(const id of ids){delete rec.answers?.[id];delete rec.criterionNotes?.[id];}
+   }
+  }
+ }
+ sec.desc=canonical.desc;
+ database.bylaw2026Migrated=true;
+ return sections;
+}
 // تعديل البند 12: احتساب خمسة درجات على ستة مؤشرات فقط، بما في ذلك النسخ القديمة المحفوظة.
 function syncInjuryStatisticsTemplate(sections, records=[]){
  const sec=sections[11];
@@ -772,6 +834,9 @@ function init(){
  if(!db){const record=createRecord();db={version:4,currentId:record.id,activeSlide:0,sections:SECTIONS,records:[record]};}
  syncInjuryStatisticsTemplate(SECTIONS, db.records);
  syncTrainingInductionTemplate(SECTIONS, db);
+ syncSafetyRepresentativesTemplate(SECTIONS, db);
+ syncSafetyRepresentativeAbsenceRemoval(SECTIONS, db.records);
+ syncMinisterialBylawTemplate(SECTIONS, db);
  if(!db.records.some(r=>r.id===db.currentId)){db.currentId=db.records[0].id;}
  slide=Math.min(12,Math.max(0,Number(db.activeSlide)||0));
  document.body.addEventListener('click',onClick);
@@ -840,6 +905,9 @@ function renderSlide(){
  let content=`<section class="slide" data-page="${i+1}"><div class="slide-top"><div><div class="slide-kicker">الاستبيان ${pad(i+1)} من 12 · وزن البند ${sec.max} من 100</div><h2>${escapeHTML(sec.title)}</h2><p class="slide-desc">${escapeHTML(sec.desc)}</p></div><div class="scorebox"><div><div class="scorecaption">${s.complete?'الدرجة النهائية للبند':'الدرجة المكتسبة حتى الآن (مؤقتة)'}</div><div class="big">${fmt(s.earned)} / ${sec.max}</div></div><div class="scorecaption">${s.complete?`استيفاء ${fmt(100*s.earned/sec.max)}%`:`${s.answered} من ${s.n} مقيمة`}</div></div></div>`;
  content+=`<div class="progress-track" role="progressbar" aria-label="نسبة الأسئلة المقيمة" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${Math.round(pct)}"><div class="progress-fill" style="width:${pct}%"></div></div><div class="mini-stats"><span>المُقيّم: <strong>${s.answered}/${s.n}</strong></span><span>المستوفي: <strong>${s.yes}</strong></span><span>الجزئي: <strong>${s.partial}</strong></span><span>غير المستوفي: <strong>${s.no}</strong></span><span>المتبقي: <strong>${s.pending}</strong></span></div>`;
  content+=`<div class="editor-bar"><div><strong>مؤشرات البند (${s.n}) — قابلة للتعديل مباشرة</strong><div class="editor-sub">يمكنك الضغط على نص أي مؤشر وتعديله أو حذفه. وزن البند ثابت: ${sec.max} درجات، وتتوزع حصة المؤشر تلقائيًا بعد الحذف أو الإضافة.</div></div></div>`;
+ if(i===3 && rec.legacyBylawSnapshots?.length){
+  content+='<div class="caution">تنبيه: تم تحديث مؤشرات هذا البند استنادًا إلى اللائحة الوزارية. حُفظت إجابات المؤشرات السابقة ضمن النسخة الاحتياطية الكاملة، ويجب إعادة تقييم المؤشرات المعدلة قبل اعتماد النتيجة النهائية.</div>';
+ }
  content+='<div class="info">اضغط على خانة «نص المؤشر» لتغيير صياغته مباشرة، ثم اختر حالة استيفائه. تظهر المؤشرات غير المستوفاة والجزئية تلقائيًا أعلى مربع البند في الصفحة 13؛ وتظهر الملاحظات المكتوبة في الجزء السفلي.</div><div class="checks">';
  sec.items.forEach((item,j)=>{
   const key=answerKey(i,j),v=rec.answers?.[key]||'',note=rec.criterionNotes?.[key]||'';
@@ -1004,7 +1072,7 @@ function onChange(e){
 function safeName(){return ('مقاول_'+(current().contractorNumber||'جديد')).replace(/[\\/:*?"<>|\r\n]+/g,'_').trim().slice(0,45)||'مقاول_جديد';}
 function download(name,contents,mime){const blob=new Blob([contents],{type:mime});const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();setTimeout(()=>{URL.revokeObjectURL(url);a.remove();},2500);}
 function exportJSON(){
- const r=current();const backup={app:'تدقيق تأهيل المقاولين - نسخة قابلة للتحرير',version:4,sections:SECTIONS,records:db.records,currentId:db.currentId,activeSlide:slide,trainingSixWordingMigrated:db.trainingSixWordingMigrated===true};
+ const r=current();const backup={app:'تدقيق تأهيل المقاولين - نسخة قابلة للتحرير',version:4,sections:SECTIONS,records:db.records,currentId:db.currentId,activeSlide:slide,trainingSixWordingMigrated:db.trainingSixWordingMigrated===true,safetyRepsWordingMigrated:db.safetyRepsWordingMigrated===true,bylaw2026Migrated:db.bylaw2026Migrated===true};
  download(`نسخة_احتياطية_كاملة_${safeName()}_${r.date||'بدون_تاريخ'}.json`,JSON.stringify(backup,null,2),'application/json;charset=utf-8');
  el('storage-message').textContent='تم تجهيز نسخة احتياطية تشمل المؤشرات المعدّلة وجميع المقاولين ودرجاتهم. يمكنك نقلها إلى جهاز آخر.';
 }
@@ -1020,9 +1088,12 @@ async function importFile(e){
   const raw=JSON.parse(await f.text());
   if(raw?.version===4&&Array.isArray(raw.records)&&raw.records.length&&validTemplate(raw.sections)){
    if(!confirm('استيراد النسخة الكاملة؟ سيُستبدل سجل المقاولين والمؤشرات الحالية بالنسخة المستوردة. احتفظ بنسخة احتياطية أولًا.'))return;
-   SECTIONS=validTemplate(raw.sections);db={version:4,sections:SECTIONS,records:raw.records.map(normalizeRecord),currentId:raw.currentId,activeSlide:0,trainingSixWordingMigrated:raw.trainingSixWordingMigrated===true};
+   SECTIONS=validTemplate(raw.sections);db={version:4,sections:SECTIONS,records:raw.records.map(normalizeRecord),currentId:raw.currentId,activeSlide:0,trainingSixWordingMigrated:raw.trainingSixWordingMigrated===true,safetyRepsWordingMigrated:raw.safetyRepsWordingMigrated===true,bylaw2026Migrated:raw.bylaw2026Migrated===true};
    syncInjuryStatisticsTemplate(SECTIONS,db.records);
    syncTrainingInductionTemplate(SECTIONS,db);
+   syncSafetyRepresentativesTemplate(SECTIONS,db);
+   syncSafetyRepresentativeAbsenceRemoval(SECTIONS, db.records);
+   syncMinisterialBylawTemplate(SECTIONS, db);
    if(!db.records.some(r=>r.id===db.currentId))db.currentId=db.records[0].id;
    slide=0;lastDeleted=null;renderAll();alert('تم استيراد المؤشرات ونتائج المقاولين بنجاح.');return;
   }
